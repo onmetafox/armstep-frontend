@@ -27,7 +27,7 @@ Need to have installed before they can use your project.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com
+git clone https://github.com/armansw/armstep-frontend.git
 ```
 
 2. Install packages
