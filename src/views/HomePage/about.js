@@ -4,7 +4,7 @@ import aboutImg from "../../assets/images/about.svg";
 const About = () => {
     return <div className='about-section'>
         <div className='container row'>
-            <div className='col-lg-5 col-sm-12 col-md-12'>
+            <div className='col-lg-5 col-sm-12 col-md-12 about-img'>
                 <img src={aboutImg} alt='about'/>
             </div>
             <div className='about-content col-lg-7 col-sm-12 col-md-12'>
