@@ -1,10 +1,10 @@
-import HomePage from "./views/HomePage";
+import Home from "./views/HomePage/index";
 
 const routes = [
     {
         title: 'Home',
         href: '/home',
-        component: HomePage,
+        component: Home,
         children: [],
         index:true
     },

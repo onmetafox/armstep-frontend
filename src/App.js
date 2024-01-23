@@ -1,10 +1,8 @@
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import MainLayout from './layout/MainLayout';
-import "./styles/style.css";
-import "./styles/colours.css";
-import "./styles/font.css";
-import './styles/space.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./styles/app.scss";
 import routes from './routes';
 
 function App() {
