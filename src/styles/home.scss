@@ -37,6 +37,7 @@
 
 .about-section{
     background-image: url("../assets/images/about-bg.svg");
+    background-color: black;
     background-size: cover;
     min-height: 615px;
     .container{
@@ -60,11 +61,34 @@
     background-color: black;
     .container{
         padding: 100px;
+        .d-flex{
+            justify-content: space-between;
+        }
     }
 }
 .service-all{
     margin-bottom: 0;
     margin-top: auto;
+}
+.service-detail >div {
+    text-align: left;
+}
+.service-card{
+    background-image: url("../assets/images/service-card-bg.svg");
+    background-size: cover;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0px 0px 32px 0px #71EA9F33;
+    height: 100%;
+    display: flex;
+    img {
+        width: 56px;
+    }
+    
+}
+.card-row{
+    width: 50%;
+    margin-top: 50px;
 }
 
 .startup-section{
@@ -86,11 +110,47 @@
     .home-section{
         background-image: url("../assets/images/home-bg-md.svg");
     }
+    .about-section{
+        background-image: url("../assets/images/about-bg-md.svg");
+    }
+    .service-detail >div {
+        text-align: center;
+    }
+    .service-section .container{
+        padding: 5px;
+        .d-flex{
+            justify-content: center;
+        }
+    }
+    .service-all{
+        display: none;
+    }
+    .startup-section{
+        background-image: url("../assets/images/startup-bg-md.svg");
+    }
 }
 
 @media (max-width:375px) {
     .home-section{
         background-image: url("../assets/images/home-bg-sm.svg");
+    }
+    .about-section{
+        background-image: url("../assets/images/about-bg-sm.svg");
+    }
+    .service-detail >div {
+        text-align: center;
+    }
+    .service-section .container{
+        padding: 5px;
+        .d-flex{
+            justify-content: center;
+        }
+    }
+    .service-all{
+        display: none;
+    }
+    .startup-section{
+        background-image: url("../assets/images/startup-bg-sm.svg");
     }
 }
 

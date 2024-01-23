@@ -4,16 +4,16 @@ import blockchainImg from "../assets/logos/service-blockchain.svg";
 import aiImg from "../assets/logos/service-ai.svg";
 import mongoLogo from "../assets/logos/mongodb.svg";
 import expressLogo from "../assets/logos/express.svg";
-import reactLogo from "../assets/logos/React.svg";
+import reactLogo from "../assets/logos/react.svg";
 import nodeLogo from "../assets/logos/node.svg";
-import swiftLogo from "../assets/logos/Swift.svg";
-import javaLogo from "../assets/logos/Java.svg";
-import kotlinLogo from "../assets/logos/Kotlin.svg";
-import solidityLogo from "../assets/logos/Solidity.svg";
-import rustLogo from "../assets/logos/Rust.svg";
-import goLogo from "../assets/logos/GO.svg";
+import swiftLogo from "../assets/logos/swift.svg";
+import javaLogo from "../assets/logos/java.svg";
+import kotlinLogo from "../assets/logos/kotlin.svg";
+import solidityLogo from "../assets/logos/solidity.svg";
+import rustLogo from "../assets/logos/rust.svg";
+import goLogo from "../assets/logos/go.svg";
 import tensorLogo from "../assets/logos/tensor.svg";
-import pytorchLogo from "../assets/logos/PyTorch.svg";
+import pytorchLogo from "../assets/logos/pytorch.svg";
 import scikitLogo from "../assets/logos/scikit.svg";
 import opencvLogo from "../assets/logos/opencv.svg";
 export const serviceData = [
@@ -175,7 +175,7 @@ export const serviceData = [
                     },
                     {
                         title: "PyTorch",
-                        icon: rustLogo
+                        icon: pytorchLogo
                     }, 
                     {
                         title: "Scikit-Learn",
