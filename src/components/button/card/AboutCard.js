@@ -1,0 +1,12 @@
+import React from 'react';
+const AboutCard = ({ onClick, number, description, className }) => {
+    return (
+        <div className="about-card">
+            <div className="fs-h1 home-title text-start">{number}</div>
+            <div className='border'></div>
+            <div className="fs-s0 color-white mt-3 text-start">{description}</div>
+        </div>
+    );
+};
+
+export default AboutCard;
