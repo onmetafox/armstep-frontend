@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from "classnames";
-
+import rightArrow from "../assets/images/right-arrow.svg"
 const ServiceCard = ({data, className}) => {
     let classNames = cx( 'service-card', className);
     return <div className={classNames}>
@@ -11,6 +11,7 @@ const ServiceCard = ({data, className}) => {
             <div className='fs-h5 color-white m-3'>{data.subtitle}</div>
             <div className='fs-b1 color-white m-3'>{data.intro}</div>
         </div>
+        <div className='service-card-right'><img src={rightArrow} alt="right arrow"style={{width:"26px"}}/></div>
     </div>
 }
 
