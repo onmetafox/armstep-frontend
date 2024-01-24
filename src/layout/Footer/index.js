@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React from 'react';
 import logo from '../../assets/images/commons/Logo.png';
 
 const Footer = () => {

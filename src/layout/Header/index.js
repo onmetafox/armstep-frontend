@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import logo from '../../assets/images/commons/Logo.png';
 import TalkToUsButton from 'src/components/button/ActiveBtn';

@@ -1,5 +1,4 @@
 import Home from "./views/HomePage/index";
-import AboutUs from "./views/AboutUsPage/index";
 
 const routes = [
     {
@@ -9,13 +8,7 @@ const routes = [
         children: [],
         index:true
     },
-    {
-        title: 'About US',
-        href: '/about-us',
-        component: AboutUs,
-        children: [],
-        index:true
-    },
+    
 ]
 
 export default routes;
