@@ -1,74 +1,59 @@
 body {
-  font-family: 'Inter';
+    font-family: 'Inter';
 }
-
 .navbar-a {
-  background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .header-container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 900px;
-  height: 72px;
-  top: 16px;
-  padding: 0 32px;
-  border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-
-  .mr-auto {
-    gap: 32px;
-
-    .nav-link {
-      padding: 0px;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 19px;
-      letter-spacing: 0.03em;
-      text-align: center;
-      color: white;
+    max-width: 900px; 
+    margin: 0 auto; 
+    width: 100%;
+    width: 900px;
+    height: 72px;
+    top: 16px;
+    padding: 0 32px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    .mr-auto {
+        gap: 32px;
+        .nav-link {
+            padding: 0px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            letter-spacing: 0.03em;
+            text-align: center;
+            color: white;
+        }
     }
-  }
 }
 
 .header-logo {
-  width: 132px;
-  height: 24px;
+    width: 132px;
+    height: 24px;
 }
 
 .header-font {
-  font-family: 'Inter';
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
-
+    
 
 // This will target the dropdown toggle specifically
 .dropdown-toggle {
-  &:after {
-    content: '\f107'; // FontAwesome down arrow
-    font-family: 'Font Awesome 5 Free';
-    margin-left: 10px;
-    vertical-align: 0;
-    border-top: 0px;
-    border-right: 0px transparent;
-    border-bottom: 0;
-    border-left: 0px transparent;
-  }
-}
-
-@media(max-width:992px) {
-  .header-container {
-    width: calc(100% - 48px);
-  }
-}
-
-@media(max-width:600px) {
-  .header-container {
-    width: calc(100% - 32px);
-    padding: 0px 16px;
-  }
+    &:after {
+        content: '\f107'; // FontAwesome down arrow
+        font-family: 'Font Awesome 5 Free';
+        margin-left: 10px;
+        vertical-align: 0;
+        border-top: 0px;
+        border-right: 0px transparent;
+        border-bottom: 0;
+        border-left: 0px transparent;
+    }
 }
