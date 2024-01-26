@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Navigation } from 'swiper/modules';
-import { Pagination } from 'swiper/modules';
 import ServiceCard from 'src/components/ServiceCard';
 import CommonBtn from 'src/components/button/CommonBtn';
 import { serviceData } from 'src/config/serviceData';
 function getCarousel () {
-    const { innerWidth: width, innerHeight: height } = window;
-    if(width <= 600 && height){
+    const { width } = window;
+    if(width <= 400){
         return true;
     }else{
         return false;
@@ -20,8 +15,9 @@ const Services = () =>{
     const [carousel, setCarousel] = useState(getCarousel());
     useEffect(() => {
         function handleResize() {
-            setCarousel(getCarousel());
+          setCarousel(getCarousel());
         }
+    
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -42,19 +38,6 @@ const Services = () =>{
                         <ServiceCard data={item} />
                     </div>
                 ))}
-                { carousel && (
-                    <Swiper navigation={true} pagination={{ dynamicBullets: true, }} modules={[Pagination, Navigation]}>
-                        {
-                            serviceData.map((item, index) => (
-                                <SwiperSlide>
-                                    <div className='card-row' key={index}>
-                                        <ServiceCard data={item} />
-                                    </div>
-                                </SwiperSlide>
-                            ))
-                        }
-                    </Swiper>
-                )}
             </div>
         </div>
     </div>
