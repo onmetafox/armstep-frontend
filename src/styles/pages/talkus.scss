@@ -1,62 +1,194 @@
 .talk-to-us-section {
-	margin-top: -72px;
-	background: url("../../assets/images/commons/contactBk.png"), lightgray 0px -248.227px / 100% 143.435% no-repeat;
-	padding: 208px 0 168px;
-	background-size: 100% 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 40px;
-	align-items: center;
+  background: url("../../assets/images/commons/contactBk.png"), lightgray 0px -248.227px / 100% 143.435% no-repeat;
+  padding: 208px 48px 168px;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
 
-	.form-wrapper {
-		max-width: 994px;
-		width: 100%;
-		padding: 0 74px;
-		border-radius: 24px;
-		border: 1px solid rgba(255, 255, 255, 0.10);
-		background: rgba(0, 0, 0, 0.50);
-		backdrop-filter: blur(30px);
+  .form-wrapper {
+    max-width: 994px;
+    width: 100%;
+    padding: 0 74px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(30px);
 
-		.contact-form-body {
-			display: flex;
-			justify-content: space-between;
+    .contact-form-body {
+      display: flex;
+      justify-content: space-between;
 
-			.contact-form-section {
-				width: 50%;
-				&:last-child h5 {
-					padding-left: 48px;
-				}
+      .contact-form-section {
+        width: 50%;
 
-				h5 {
-					margin: 30px 0 0;
-					padding-bottom: 22px;
-					border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-				}
+        &:last-child h5 {
+          padding-left: 48px;
+        }
 
-				.form-body-wrapper {
-					display: flex;
-					flex-direction: column;
-					gap: 24px;
-					padding: 40px 48px 100px;
-				}
+        h5 {
+          margin: 30px 0 0;
+          padding-bottom: 22px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        }
 
-				.form-body-wrapper.your-contacts {
-					padding-left: 0;
-				}
+        .form-body-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          padding: 40px 48px 100px;
 
-				.form-body-wrapper.your-project {
-					padding-right: 0;
-					border-left: 1px solid rgba(255, 255, 255, 0.10);
-				}
-			}
-		}
+          .contact-form-input,
+          .contact-form-textarea {
+            padding: 13.5px 12px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            background: #111;
+            color: #ffffff;
+          }
 
-		.contact-form-footer {
-			border-top: 1px solid rgba(255, 255, 255, 0.1);
-			padding: 30px 0 24px;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
-	}
+          .project-sizes {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: flex-start;
+
+            .project-sizes-wrapper {
+              display: flex;
+              gap: 16px;
+
+              p {
+                cursor: pointer;
+                padding: 8px 16px;
+                border: 1px solid rgba(255, 255, 255, 0.10);
+                border-radius: 999px;
+                background-color: black;
+                position: relative;
+
+                &:hover::after {
+                  content: '';
+                  position: absolute;
+                  top: -2px;
+                  left: -2px;
+                  right: -2px;
+                  bottom: -2px;
+                  z-index: -2;
+                  background: linear-gradient(90deg, #71EA9F 0%, #A16FF6 100%);
+                  border-radius: 999px;
+                }
+
+                &:hover {
+                  border: 1px solid transparent;
+                }
+              }
+
+              p.active {
+                background: linear-gradient(90deg, rgba(113, 234, 159, 0.20) 0%, rgba(161, 111, 246, 0.20) 100%);
+                border: 1px solid transparent;
+
+                &::after {
+                  content: '';
+                  position: absolute;
+                  top: -2px;
+                  left: -2px;
+                  right: -2px;
+                  bottom: -2px;
+                  z-index: -2;
+                  background: linear-gradient(90deg, #71EA9F 0%, #A16FF6 100%);
+                  border-radius: 999px;
+                }
+              }
+            }
+          }
+        }
+
+        .form-body-wrapper.your-contacts {
+          padding-left: 0;
+        }
+
+        .form-body-wrapper.your-project {
+          padding-right: 0;
+          border-left: 1px solid rgba(255, 255, 255, 0.10);
+        }
+      }
+    }
+
+    .contact-form-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 30px 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .talk-to-us-section {
+    padding: 168px 48px 80px;
+
+    .section-title {
+      font-size: 28px;
+    }
+
+    .form-wrapper {
+      padding: 0;
+
+      .contact-form-body {
+        flex-direction: column;
+
+        .contact-form-section {
+          width: 100%;
+
+          .form-body-wrapper {
+            padding: 32px 69px 32px 60px !important;
+          }
+
+          .form-body-wrapper.your-project {
+            border-left: none;
+            padding-top: 0 !important;
+          }
+
+          h5 {
+            margin: 0;
+            padding: 32px 0 25px 30px;
+          }
+
+          &:last-child h5 {
+            border-bottom: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-left: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .talk-to-us-section {
+    padding: 234px 16px 80px;
+
+    .form-wrapper {
+      .contact-form-body {
+        .contact-form-section {
+          .form-body-wrapper {
+            padding: 24px 16px !important;
+            .project-sizes {
+              .project-sizes-wrapper {
+                gap: 8px;
+              }
+            }
+          }
+          h5 {
+            padding: 16px 0 9px 16px;
+          }
+          &:last-child h5 {
+            padding: 24px 0 16px 16px;
+          }
+        }
+      }
+    }
+  }
 }

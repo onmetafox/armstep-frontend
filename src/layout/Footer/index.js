@@ -15,55 +15,55 @@ const Footer = () => {
               <p className='footer-email'>armstep@development</p>
               <div className="social-icons d-flex">
                 {/* Replace with actual icons */}
-                <span><i class="fa-brands fa-github"></i></span>
-                <span><i class="fa-brands fa-x-twitter"></i></span>
-                <span><i class="fa-brands fa-upwork"></i></span>
-                <span><i class="fa-brands fa-linkedin-in"></i></span>
+                <a href='#'><i class="fa-brands fa-github"></i></a>
+                <a href='#'><i class="fa-brands fa-x-twitter"></i></a>
+                <a href='#'><i class="fa-brands fa-upwork"></i></a>
+                <a href='#'><i class="fa-brands fa-linkedin-in"></i></a>
               </div>
             </div>
           </div>
           <div className="footer-section d-flex">
             <div className="footer-menu d-flex">
               <div className="footer-category">
-                <h4 className='fs-button'>Home</h4>
+                <a href='/' className='fs-button'>Home</a>
                 <div className="d-flex">
-                  <div className="sub-menu">Services</div>
-                  <div className="sub-menu">Projects</div>
-                  <div className="sub-menu">Industries</div>
-                  <div className="sub-menu">Comments</div>
+                  <a href='#' className="sub-menu">Services</a>
+                  <a href='#' className="sub-menu">Projects</a>
+                  <a href='#' className="sub-menu">Industries</a>
+                  <a href='#' className="sub-menu">Testimonials</a>
                 </div>
               </div>
               <div className="footer-category">
-                <h4 className='fs-button'>Services</h4>
+                <a href='/service' className='fs-button'>Services</a>
                 <div className="d-flex">
-                  <div className="sub-menu">Web</div>
-                  <div className="sub-menu">Mobile</div>
-                  <div className="sub-menu">Blockchain</div>
-                  <div className="sub-menu">AI && ML</div>
+                  <a href='#' className="sub-menu">Web</a>
+                  <a href='#' className="sub-menu">Mobile</a>
+                  <a href='#' className="sub-menu">Blockchain</a>
+                  <a href='#' className="sub-menu">AI && ML</a>
                 </div>
               </div>
               <div className="footer-category">
-                <h4 className='fs-button'>Portfolio</h4>
+                <a href='/portfolio' className='fs-button'>Portfolio</a>
                 <div className="d-flex">
-                  <div className="sub-menu">Graviton</div>
-                  <div className="sub-menu">demoverse</div>
-                  <div className="sub-menu">slash.digital</div>
-                  <div className="sub-menu">tribeone</div>
-                  <div className="sub-menu">serenityshield</div>
+                  <a href='#' className="sub-menu">Graviton</a>
+                  <a href='#' className="sub-menu">demoverse</a>
+                  <a href='#' className="sub-menu">slash.digital</a>
+                  <a href='#' className="sub-menu">tribeone</a>
+                  <a href='#' className="sub-menu">serenityshield</a>
                 </div>
               </div>
               <div className="footer-category">
-                <h4 className='fs-button'>About</h4>
+                <a href='/about-us' className='fs-button'>About</a>
                 <div className="d-flex">
-                  <div className="sub-menu">About</div>
-                  <div className="sub-menu">Core Team</div>
+                  <a href='/about-us' className="sub-menu">About</a>
+                  <a href='/team' className="sub-menu">Core Team</a>
                 </div>
               </div>
               <div className="footer-category">
-                <h4 className='fs-button'>Legal</h4>
+                <a href='/legal' className='fs-button'>Legal</a>
                 <div className="d-flex">
-                  <div className="sub-menu">Privacy & Policy</div>
-                  <div className="sub-menu">Terms & Condition</div>
+                  <a href='#' className="sub-menu">Privacy & Policy</a>
+                  <a href='#' className="sub-menu">Terms & Condition</a>
                 </div>
               </div>
             </div>

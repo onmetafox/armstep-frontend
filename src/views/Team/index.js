@@ -45,7 +45,7 @@ const teamMembers = [
     imgUrl: samImg,
     upwork: '/upwork',
     linkedin: '/linkedin',
-    about: "Meet Samvel, the mastermind behind our cutting-edge technological solutions and the Co-Founder of our agency. With a remarkable track record of working with over 35 clients, Samvel's expertise is the cornerstone of our success in delivering exceptional digital solutions.  As our CTO, Samvel embodies the perfect blend of technical prowess and leadership excellence. He is dedicated to fostering a culture of innovation and precision, ensuring that every project we undertake is a testament to our commitment to quality and ingenuity.",
+    about: "Meet Samvel, the mastermind behind our cutting-edge technological solutions and the Co-Founder of our agency. With a remarkable track record of working with over 35 clients, Samvel's expertise is the cornerstone of our success in delivering exceptional digital solutions. As our CTO, Samvel embodies the perfect blend of technical prowess and leadership excellence. He is dedicated to fostering a culture of innovation and precision, ensuring that every project we undertake is a testament to our commitment to quality and ingenuity.",
     stacks: [
       {
         icon: tensorFlow,
