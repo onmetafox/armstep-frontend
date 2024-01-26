@@ -4,7 +4,7 @@ const AboutCard = ({ onClick, number, description, className }) => {
         <div className="about-card">
             <div className="fs-h1 home-title text-start">{number}</div>
             <div className='border'></div>
-            <div className="fs-s0 color-white text-start">{description}</div>
+            <div className="fs-h5 color-white text-start">{description}</div>
         </div>
     );
 };

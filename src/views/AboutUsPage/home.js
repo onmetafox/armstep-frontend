@@ -15,11 +15,16 @@ const Home = () => {
       <div className='fs-h1 color-white p-1 title'>About Us</div>
       <div className='d-flex about-content justify-content-between align-items-center'>
         <div className='about-home-f-img'>
-          <img src={aboutImg} alt='about'/>
+          <img src={aboutImg} alt='about' />
         </div>
         <div className='d-flex about-home-s-container'>
-          <div className='about-home-s-img'>
-            <img src={aboutBannerImg} about='aboutBanner' />
+          <div className='about-home-image-wrapper'>
+            <div className='about-home-f-img'>
+              <img src={aboutImg} alt='about' />
+            </div>
+            <div className='about-home-s-img'>
+              <img src={aboutBannerImg} about='aboutBanner' />
+            </div>
           </div>
           <div className='fs-s1 color-white text-start'>We are a team of top rated and top rated plus freelancers from Upwork, who have successfully worked with over 60 clients during last 4 years.
             Our track record shows how we can be helpful to our clients (all of this text should be polished by AI)</div>

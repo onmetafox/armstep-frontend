@@ -40,6 +40,7 @@ body.modal-open {
 
       .team-member-name {
         padding-top: 8px;
+        text-align: left;
       }
 
       .team-member-role {
@@ -102,12 +103,12 @@ body.modal-open {
 
       .member-about-section p {
         text-align: left;
+        margin-top: 16px;
         margin-bottom: 4px;
       }
 
       hr {
         background: rgba(255, 255, 255, 0.10);
-        margin: 0;
         border: none;
         width: 100%;
         height: 1px;

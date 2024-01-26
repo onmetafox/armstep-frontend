@@ -71,7 +71,7 @@ const TeamMemberCard = ({ name, role, imgUrl, upwork, linkedin }) => {
   return (
     <div className="wrapper">
       <img src={imgUrl} alt={name} className="team-member-image" />
-      <h3 className="team-member-name fs-h5">{name}</h3>
+      <h3 className="team-member-name fs-s1">{name}</h3>
       <p className="team-member-role fs-c">{role}</p>
       <div className="social-links">
         <a href={upwork} target="_blank" rel="noopener noreferrer">

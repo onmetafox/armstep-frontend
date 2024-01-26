@@ -4,7 +4,7 @@ import React, { useRef, useState, useEffect } from 'react';
 const ProcessStep = ({ active, stepNumber, description }) => {
   return (
     <div className={`process-step ${active}`}>
-      <div className="home-title fs-s0 text-start">{stepNumber}</div>
+      <div className="home-title fs-h5 text-start">{stepNumber}</div>
       <div className='fs-b'>{description}</div>
     </div>
   );

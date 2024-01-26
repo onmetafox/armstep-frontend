@@ -1,82 +1,135 @@
-.fs-h1{
-    font-family: Inter;
-    font-size: 61px;
-    font-weight: 700;
-    line-height: 74px;
-    letter-spacing: 0em;
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+hr,
+p {
+  margin: 0;
+}
+
+.fs-h1 {
+  font-family: Inter;
+  font-size: 61px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.fs-h2 {
+  font-family: Inter;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.fs-h3 {
+  font-family: Inter;
+  font-size: 39px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.78px;
+  text-align: center;
+}
+
+.fs-h4 {
+  font-family: Inter;
+  font-size: 31px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.31px;
+}
+
+.fs-h5 {
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.01em;
+  text-align: left;
 
 }
-.fs-h2{
-    font-family: Inter;
-    font-size: 49px;
-    font-weight: 700;
-    line-height: 59px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-.fs-h4{
-    font-family: Inter;
-    font-size: 31px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.31px;
-}
-.fs-h5{
-    font-family: Inter;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: -0.01em;
-    text-align: left;
 
+.fs-s0 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: auto;
+  letter-spacing: 0.4px;
+  text-align: center;
 }
-.fs-s0{
-    font-family: Inter;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 31px;
-    letter-spacing: 0.4px;
-    text-align: center;
+
+.fs-s1 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  text-align: center;
 }
-.fs-s1{
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 28px;
-    letter-spacing: 0.4px;
-    text-align: center;
+
+.fs-o {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
 }
-.fs-o{
-    font-family: Inter;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 0em;
-    text-align: left;
+
+.fs-b {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
-.fs-b{
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 21px;
-    letter-spacing: 0.03em;
-    text-align: left;
+
+.fs-c {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  text-align: right;
 }
-.fs-c{
-    font-family: Inter;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 16px;
-    letter-spacing: -0.01em;
-    text-align: right;
-}
+
 .fs-button {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    text-align: left;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: left;
 
+}
+
+@media (max-width: 992px) {
+  .fs-h1 {
+    font-size: 38px;
+  }
+
+  .fs-h2 {
+    font-size: 28px;
+  }
+
+  .fs-h3 {
+    font-size: 25px;
+  }
+
+  .fs-h4 {
+    font-size: 22px;
+  }
+
+  .fs-h5 {
+    font-size: 20px;
+  }
+
+  .fs-s1 {
+    font-size: 18px;
+  }
 }
