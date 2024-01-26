@@ -71,7 +71,7 @@ body.modal-open {
 
     .modal-content {
       border-radius: 16px;
-      padding: 16px;
+      padding: 24px;
       background-color: #111;
       max-width: 580px;
       position: relative;
@@ -140,12 +140,18 @@ body.modal-open {
         cursor: pointer;
       }
 
+      @media (max-width: 992px) {
+        padding: 16px;
+      }
+
       @media (max-width: 600px) {
         .wrapper {
           flex-direction: column;
           align-items: center;
+
           .details {
             width: 100%;
+
             h4.fs-c {
               text-align: left;
             }
