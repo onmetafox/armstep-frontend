@@ -25,11 +25,11 @@ const Header = () => {
         <Nav className="mr-auto d-flex">
           <Nav.Link href="/">Home</Nav.Link>
           <NavDropdown title="Services" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">All Services</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Web</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Mobile</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Blockchain</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">AI and ML</NavDropdown.Item>
+            <NavDropdown.Item href="/services">All Services</NavDropdown.Item>
+            <NavDropdown.Item href="/service/0">Web</NavDropdown.Item>
+            <NavDropdown.Item href="/service/1">Mobile</NavDropdown.Item>
+            <NavDropdown.Item href="/service/2">Blockchain</NavDropdown.Item>
+            <NavDropdown.Item href="/service/3">AI and ML</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href="#portfolio">Portfolio</Nav.Link>
           <NavDropdown title="About" id="basic-nav-dropdown">

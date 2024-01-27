@@ -34,12 +34,12 @@ const Footer = () => {
                 </div>
               </div>
               <div className="footer-category">
-                <a href='/service' className='fs-button'>Services</a>
+                <a href='/services' className='fs-button'>Services</a>
                 <div className="d-flex">
-                  <a href='#' className="sub-menu">Web</a>
-                  <a href='#' className="sub-menu">Mobile</a>
-                  <a href='#' className="sub-menu">Blockchain</a>
-                  <a href='#' className="sub-menu">AI && ML</a>
+                  <a href='/service/0' className="sub-menu">Web</a>
+                  <a href='/service/1' className="sub-menu">Mobile</a>
+                  <a href='/service/2' className="sub-menu">Blockchain</a>
+                  <a href='/service/3' className="sub-menu">AI && ML</a>
                 </div>
               </div>
               <div className="footer-category">
