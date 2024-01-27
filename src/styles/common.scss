@@ -1,13 +1,3 @@
-body{
-  background-color: black;
-  position: relative;
-}
-.content{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  min-height: calc(100vh - 253px);
-}
 .active-btn {
     background: linear-gradient(90deg, #71EA9F 0%, #A16FF6 100%);
     border: none;
@@ -66,7 +56,6 @@ body{
 }
 .container{
     max-width: 1440px !important;
-    padding: 20px;
 }
 
 .common-card {
@@ -112,4 +101,3 @@ body{
       }
     }
   }
-

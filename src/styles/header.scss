@@ -1,171 +1,74 @@
 body {
-    font-family: 'Inter';
+  font-family: 'Inter';
 }
 
 .navbar-a {
-    background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .header-container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 900px;
-    height: 72px;
-    top: 16px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    padding: 0 32px;
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    position: fixed;
-    z-index: 999;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  height: 72px;
+  top: 16px;
+  padding: 0 32px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
-    &.active {
-        border-radius: 24px 24px 0 0;
+  .mr-auto {
+    gap: 32px;
+
+    .nav-link {
+      padding: 0px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 0.03em;
+      text-align: center;
+      color: white;
     }
-
-    .mr-auto {
-        gap: 32px;
-
-        .nav-link {
-            padding: 0px;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 19px;
-            letter-spacing: 0.03em;
-            text-align: center;
-            color: white;
-
-            &:hover {
-                color: #71EA9F;
-            }
-        }
-
-        .nav-item {
-            &.show {
-                .nav-link {
-                    &::after {
-                        transform: rotate(180deg);
-                    }
-                }
-            }
-
-            .dropdown-menu {
-                border-radius: 24px;
-                border: 1px solid rgba(255, 255, 255, 0.10);
-                padding: 18px 25px 24px 25px;
-                margin-top: 30px;
-                background: #111;
-                flex-direction: column;
-                gap: 16px;
-                min-width: auto;
-
-                &.show {
-                    display: flex;
-                }
-
-                .dropdown-item {
-                    color: #fff;
-                    padding: 0;
-                    text-align: center;
-                    font-family: Inter;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                    letter-spacing: 0.42px;
-
-                    &:hover {
-                        color: #71EA9F;
-                        background-color: transparent;
-                    }
-                }
-            }
-        }
-    }
-
-    @media (max-width: 992px) {
-        width: calc(100% - 48px);
-
-        .mr-auto {
-            gap: 0;
-
-            &>.nav-link,
-            &>.nav-item {
-                padding: 24px 0;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-            }
-
-            .nav-item {
-                .dropdown-menu {
-                    background: transparent;
-                    border: none;
-                    padding: 0;
-                    margin-top: 24px;
-                }
-            }
-        }
-
-        .navbar-collapse {
-            position: absolute;
-            top: 100%;
-            width: calc(100% + 2px);
-            left: -1px;
-            background: rgb(0, 0, 0);
-            padding: 0px 25px 24px;
-            border-radius: 0px 0px 24px 24px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-top: none;
-        }
-
-        .mobile-toggle-wrapper {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-        }
-
-        .navbar-toggler {
-            padding: 0;
-            border: none;
-            box-shadow: none;
-        }
-    }
-
-    @media(max-width:600px) {
-        width: calc(100% - 32px);
-        padding: 0px 16px;
-
-        .mobile-toggle-wrapper {
-            gap: 10px;
-        }
-    }
+  }
 }
 
 .header-logo {
-    width: 132px;
-    height: 24px;
+  width: 132px;
+  height: 24px;
 }
 
 .header-font {
-    font-family: 'Inter';
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    text-align: center;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 
 // This will target the dropdown toggle specifically
 .dropdown-toggle {
-    &:after {
-        content: '\f107'; // FontAwesome down arrow
-        font-family: 'Font Awesome 5 Free';
-        margin-left: 10px;
-        vertical-align: 0;
-        border-top: 0px;
-        border-right: 0px transparent;
-        border-bottom: 0;
-        border-left: 0px transparent;
-    }
+  &:after {
+    content: '\f107'; // FontAwesome down arrow
+    font-family: 'Font Awesome 5 Free';
+    margin-left: 10px;
+    vertical-align: 0;
+    border-top: 0px;
+    border-right: 0px transparent;
+    border-bottom: 0;
+    border-left: 0px transparent;
+  }
+}
+
+@media(max-width:992px) {
+  .header-container {
+    width: calc(100% - 48px);
+  }
+}
+
+@media(max-width:600px) {
+  .header-container {
+    width: calc(100% - 32px);
+    padding: 0px 16px;
+  }
 }

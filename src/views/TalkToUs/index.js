@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import SelectBox from 'src/components/SelectBox';
 import '../../styles/pages/talkus.scss';
+import SelectBox from 'src/components/SelectBox';
 
 const projectSizes = ["1-3 months", "3-6 months", "6-12 months"];
 const services = [

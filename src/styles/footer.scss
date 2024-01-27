@@ -25,22 +25,9 @@
       display: flex;
       gap: 24px;
     }
-
     .footer-menu {
       flex-direction: row;
       gap: 56px;
-
-      .footer-category {
-        & > a {
-          line-height: 175%;
-          color: #fff;
-          text-decoration: none;
-
-          &:hover {
-            color: #71EA9F;
-          }
-        }
-      }
     }
 
     .footer-email {
@@ -54,30 +41,17 @@
       .sub-menu {
         font-size: 10px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 12px;
         letter-spacing: 0em;
         text-align: left;
         color: rgba(180, 182, 196, 1);
-        text-decoration: none;
-
-        &:hover {
-          color: #71EA9F;
-        }
       }
     }
 
     .social-icons {
       // Add styles for your social icons here
       flex-direction: row;
-      gap: 24px;
-
-      .fa-brands {
-        color: #fff;
-
-        &:hover {
-          color: #71EA9F;
-        }
-      }
+      gap: 24px
     }
   }
 

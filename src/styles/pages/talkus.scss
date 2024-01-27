@@ -1,6 +1,7 @@
 .talk-to-us-section {
+  margin-top: -72px;
   background: url("../../assets/images/commons/contactBk.png"), lightgray 0px -248.227px / 100% 143.435% no-repeat;
-  padding: 208px 48px 168px;
+  padding: 208px 0 168px;
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
@@ -86,7 +87,7 @@
               p.active {
                 background: linear-gradient(90deg, rgba(113, 234, 159, 0.20) 0%, rgba(161, 111, 246, 0.20) 100%);
                 border: 1px solid transparent;
-
+                
                 &::after {
                   content: '';
                   position: absolute;
@@ -120,75 +121,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  .talk-to-us-section {
-    padding: 168px 48px 80px;
-
-    .section-title {
-      font-size: 28px;
-    }
-
-    .form-wrapper {
-      padding: 0;
-
-      .contact-form-body {
-        flex-direction: column;
-
-        .contact-form-section {
-          width: 100%;
-
-          .form-body-wrapper {
-            padding: 32px 69px 32px 60px !important;
-          }
-
-          .form-body-wrapper.your-project {
-            border-left: none;
-            padding-top: 0 !important;
-          }
-
-          h5 {
-            margin: 0;
-            padding: 32px 0 25px 30px;
-          }
-
-          &:last-child h5 {
-            border-bottom: none;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-left: 60px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .talk-to-us-section {
-    padding: 234px 16px 80px;
-
-    .form-wrapper {
-      .contact-form-body {
-        .contact-form-section {
-          .form-body-wrapper {
-            padding: 24px 16px !important;
-            .project-sizes {
-              .project-sizes-wrapper {
-                gap: 8px;
-              }
-            }
-          }
-          h5 {
-            padding: 16px 0 9px 16px;
-          }
-          &:last-child h5 {
-            padding: 24px 0 16px 16px;
-          }
-        }
-      }
     }
   }
 }

@@ -7,7 +7,7 @@ const MainLayout = (props) => {
     return (
         <div className = "body">
             <Header />
-            <div className="content">
+            <div minHeight="calc(100vh - 64px)" display="flex" flexDirection="column">
                 <Outlet />
             </div>
             <Footer/>

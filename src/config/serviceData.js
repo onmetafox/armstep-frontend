@@ -16,8 +16,6 @@ import tensorLogo from "../assets/logos/tensor.svg";
 import pytorchLogo from "../assets/logos/pytorch.svg";
 import scikitLogo from "../assets/logos/scikit.svg";
 import opencvLogo from "../assets/logos/opencv.svg";
-import gptLogo from "../assets/logos/gpt-4.svg";
-import huggingLogo from "../assets/logos/hugging.svg";
 export const serviceData = [
     {
         logo: webImg,
@@ -51,7 +49,7 @@ export const serviceData = [
             },
             {
                 title: "MEAN Stack",
-                detail: "MEAN enables developers to build dynamic and scalable web applications entirely in JavaScript, making it a versatile choice for creating modern, real-time, and single-page applications.",
+                detail: "This stack provides an end-to-end framework for the developers to work in and each of these technologies play a big part in the development of web applications.",
                 icons:[
                     {
                         title: "MongoDB",
@@ -61,7 +59,10 @@ export const serviceData = [
                         title: "Express.js",
                         icon: expressLogo
                     },
-                    
+                    {
+                        title: "Angular",
+                        icon: reactLogo
+                    },
                     {
                         title: "Node.js",
                         icon: nodeLogo
@@ -95,19 +96,15 @@ export const serviceData = [
             },
             {
                 title: "Android",
-                detail: "Our expertise includes programming languages like Java and Kotlin, Android Studio (the official integrated development environment), XML for layout design, and various Android libraries and frameworks.",
+                detail: "Whether it's iOS or Android, our team transforms ideas into engaging, high-performance mobile experiences, ensuring your presence in the palm of your users' hands is nothing short of exceptional",
                 icons:[
                     {
-                        title: "React Native",
-                        icon: reactLogo
+                        title: "Java",
+                        icon: javaLogo
                     },
                     {
                         title: "Kotlin",
                         icon: kotlinLogo
-                    },
-                    {
-                        title: "Java",
-                        icon: javaLogo
                     },
                     
                 ]
@@ -144,15 +141,15 @@ export const serviceData = [
             },
             {
                 title: "WEB3",
-                detail: "We are experts in Web3 technologies, paving the way for the decentralized and blockchain-powered future of the internet. Our proficiency includes blockchain platforms, smart contract development, decentralized applications (DApps), IPFS for decentralized file storage and building blockchain-based solutions.",
+                detail: "Whether it's iOS or Android, our team transforms ideas into engaging, high-performance mobile experiences, ensuring your presence in the palm of your users' hands is nothing short of exceptional",
                 icons:[
                     {
-                        title: "Alchemy",
-                        icon: solidityLogo
+                        title: "Java",
+                        icon: javaLogo
                     },
                     {
-                        title: "Hardhat",
-                        icon: rustLogo
+                        title: "Kotlin",
+                        icon: kotlinLogo
                     },
                     
                 ]
@@ -162,7 +159,7 @@ export const serviceData = [
     },
     {
         logo: aiImg,
-        title: "AI and Machine Learning",
+        title: "Blockchain",
         subtitle: "AI and Machine Learning",
         intro: "Web Development (MERN, MEAN Stacks) Our web development services encompass the use of cutting-edge technology stacks, including MERN (MongoDB, Express.js, React, Node.js) and MEAN (MongoDB, Express.js, Angular, Node.js). ",
         detail: "Whether you're a startup looking to implement machine learning or an enterprise seeking to harness the power of artificial intelligence, we're here to make it happen.",
@@ -193,15 +190,15 @@ export const serviceData = [
             },
             {
                 title: "Generative AI",
-                detail: "Our expertise enables us to create AI-driven systems that autonomously generate diverse content, from realistic text and images to innovative applications across various domains.",
+                detail: "Whether it's iOS or Android, our team transforms ideas into engaging, high-performance mobile experiences, ensuring your presence in the palm of your users' hands is nothing short of exceptional",
                 icons:[
                     {
-                        title: "GPT4",
-                        icon: gptLogo
+                        title: "Java",
+                        icon: javaLogo
                     },
                     {
-                        title: "HuggingFace",
-                        icon: huggingLogo
+                        title: "Kotlin",
+                        icon: kotlinLogo
                     },
                     
                 ]
