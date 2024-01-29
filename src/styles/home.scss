@@ -36,7 +36,7 @@
 
 
 .about-section{
-    background-image: url("../assets/images/about-bg.svg");
+    background-image: url("../assets/images/why-bg.svg") repeat 0 0;
     background-color: black;
     background-size: cover;
     min-height: 615px;
@@ -99,8 +99,9 @@
 
 .startup-section{
     background-image: url("../assets/images/startup-bg.svg");
+    // background: linear-gradient(90deg, #71EA9F 0%, #A16FF6 100%);
     background-size: cover;
-    height: 370px;
+    min-height: 370px;
     line-height: 1.3;
     .container{
         display: flex;
@@ -152,7 +153,57 @@
         background: linear-gradient(90deg, #71EA9F 0%, #A16FF6 100%);
     }
 }
-
+.technology-section{
+    background-position: bottom;
+    background-image: url("../assets/images/tech-bg.svg");
+    background-repeat: no-repeat;
+}
+.tab-categories{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    .tab-category{
+        list-style-type: none;
+        padding: 8px 16px 8px 16px;
+        border-radius: 32px;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .tab-category.active{
+        background: linear-gradient(90deg, #71EA9F 0%, #A16FF6 100%);
+    }
+    
+}
+.tech-card{
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tech-card-content{
+    .react-tabs{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .sub-category{
+        cursor: pointer;
+        list-style-type: none;
+        min-width: 175px;
+    }
+    .sub-category.active{
+        background: -webkit-linear-gradient(90deg, #71EA9F 0%, #A16FF6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.logo-container{
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    gap: 55px;
+}
 .why-section {
     background-image: url("../assets/images/why-bg.svg");
     background-size: cover;
@@ -283,6 +334,9 @@
     .service-all{
         display: none;
     }
+    .technology-section{
+        background-image: url("../assets/images/tech-bg-md.svg");
+    }
     .startup-section{
         background-image: url("../assets/images/startup-bg-md.svg");
     }
@@ -324,6 +378,9 @@
     }
     .service-all{
         display: none;
+    }
+    .technology-section{
+        background-image: url("../assets/images/tech-bg-sm.svg");
     }
     .startup-section{
         background-image: url("../assets/images/startup-bg-sm.svg");
