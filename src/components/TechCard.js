@@ -3,7 +3,6 @@ import cx from "classnames";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 const TechCard = ({data, className}) => {
     const [active, setActive] = useState(0);
-    console.log(data);
     let classNames = cx( 'tech-card', className);
     return <div className={classNames}>
         <div className='tech-card-content m-2'>
