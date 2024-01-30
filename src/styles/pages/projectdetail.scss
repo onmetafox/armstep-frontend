@@ -48,3 +48,14 @@
     }
     
 }
+
+@media (max-width:900px) {
+    .startup-section{
+        display: none;
+    }
+}
+@media (max-width:400px) {
+    .startup-section{
+        display: none;
+    }
+}

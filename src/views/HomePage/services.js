@@ -46,7 +46,7 @@ const Services = () =>{
                     </div>
                 ))}
                 { carousel && (
-                    <Swiper navigation={true} pagination={{ dynamicBullets: true, }} modules={[Pagination, Navigation]}>
+                    <Swiper pagination={{ dynamicBullets: true, }} modules={[Pagination]}>
                         {
                             serviceData.map((item, index) => (
                                 <SwiperSlide>

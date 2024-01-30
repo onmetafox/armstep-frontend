@@ -9,10 +9,10 @@ const Project = () => {
         <div className='container'>
             <div className='d-flex'>
                 <div className='project-detail'>
-                    <div className='fs-h2 color-white m-2'>Projects</div>
-                    <div className='fs-s1 color-white m-2'>As a seasoned creator of contemporary, user-<br></br>friendly web designs and digital solutions, I aim <br></br>to assist you in constructing the brand of your fantasies.</div>
+                    <div className='fs-h2 color-white m-2 text-start'>Projects</div>
+                    <div className='fs-s1 color-white m-2 text-start'>As a seasoned creator of contemporary, user-<br></br>friendly web designs and digital solutions, I aim <br></br>to assist you in constructing the brand of your fantasies.</div>
                 </div>
-                <div className='text-end project-all'>
+                <div className='project-all'>
                     <CommonBtn title={"See all"} className={"color-white"} onClick = {()=> {navigate("/projects")}}/>
                 </div>
             </div>

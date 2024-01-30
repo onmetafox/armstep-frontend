@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,7 +11,23 @@ import rightEffect from "../../assets/images/right-effect.svg";
 
 import "../../styles/style.css";
 const Reviews = () => {
-   
+    function getCarousel () {
+        const { innerWidth: width, innerHeight: height } = window;
+        if(width <= 600 && height){
+            return true;
+        }else{
+            return false;
+        }
+        
+    }
+    const [carousel, setCarousel] = useState(getCarousel());
+    useEffect(() => {
+        function handleResize() {
+            setCarousel(getCarousel());
+        }
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     return <div className='review-section'>
         <div className='container'>
             <div className='left-effect'>
@@ -20,10 +36,10 @@ const Reviews = () => {
             <div className='right-effect'>
                 <img src = {rightEffect} alt='right effect'/>
             </div>
-            <div className='fs-h2 color-white'>Trusted by the best</div>
+            <div className='fs-h2 color-white mt-4'>Trusted by the best</div>
             <div className='fs-s1 color-white review-detail'>Discover what our clients have to say about their experiences working with us</div>
             <div className='review-content mt-5'>
-                <Swiper slidesPerView={3} spaceBetween={30} centeredSlides={true} pagination={{ clickable: true, }} modules={[Pagination, Navigation]} loop={true}>
+                <Swiper slidesPerView={carousel?1:3} spaceBetween={30} centeredSlides={true} pagination={{ clickable: true, }} modules={[Pagination, Navigation]} loop={true}>
                 {
                     reviewData.map((item, index)=>(
                         <SwiperSlide key={index}>

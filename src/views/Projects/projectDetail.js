@@ -42,13 +42,13 @@ const ProjectDetail = () => {
                 </div>
             </div>
 
-            <div className="row mtb-100">
-                <div className="col-lg-4 col-md-12 col-sm-12 color-white fs-h3">About client</div>
-                <div className="col-lg-8 col-md-12 col-sm-12 color-white fs-b">{addLineBreak(data.client)}</div>
+            <div className="row mtb-50">
+                <div className="col-lg-4 col-md-12 col-sm-12 color-white fs-h3 p-3">About client</div>
+                <div className="col-lg-8 col-md-12 col-sm-12 color-white fs-b p-3">{addLineBreak(data.client)}</div>
             </div>
-            <div className="row mtb-100">
-                <div className="col-lg-4 col-md-12 col-sm-12 color-white fs-h3">Task Overview</div>
-                <div className="col-lg-8 col-md-12 col-sm-12 color-white fs-b">
+            <div className="row mtb-50">
+                <div className="col-lg-4 col-md-12 col-sm-12 color-white fs-h3 p-3">Task Overview</div>
+                <div className="col-lg-8 col-md-12 col-sm-12 color-white fs-b p-3">
                     {addLineBreak(data.overview)} <br></br><br></br><br></br>
                     <CommonBtn title={"Visite website"} className={"no-gradi"}/>
                 </div>
@@ -77,9 +77,9 @@ const ProjectDetail = () => {
                     </div>
                 </div>
             </div>
-            <div className="row mtb-100">
-                <div className="col-lg-4 col-md-12 col-sm-12 color-white fs-h3">Results</div>
-                <div className="col-lg-8 col-md-12 col-sm-12 color-white fs-b">{addLineBreak(data.result)}</div>
+            <div className="row mtb-50">
+                <div className="col-lg-4 col-md-12 col-sm-12 color-white fs-h3 p-3">Results</div>
+                <div className="col-lg-8 col-md-12 col-sm-12 color-white fs-b p-3" >{addLineBreak(data.result)}</div>
 
             </div>
         </div>

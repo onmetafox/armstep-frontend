@@ -70,6 +70,7 @@
 .service-all, .project-all{
   margin-bottom: 0;
   margin-top: auto;
+  text-align: right;
 }
 .service-detail >div, .project-detail>div {
   text-align: left;
@@ -81,6 +82,7 @@
   padding: 32px;
   box-shadow: 0px 0px 32px 0px #71EA9F33;
   height: 100%;
+  min-height: 250px;
   display: flex;
   position: relative;
   img {
@@ -97,7 +99,10 @@
   width: 50%;
   margin-top: 50px;
 }
-
+.tab-container{
+    display: flex;
+    flex-direction: row;
+}
 .startup-section{
     background-image: url("../assets/images/startup-bg.svg");
     background-size: cover;
@@ -174,6 +179,8 @@
     }
     .tab-category.active{
         background: linear-gradient(90deg, #71EA9F 0%, #A16FF6 100%);
+        margin-top: auto;
+        margin-bottom: auto;
     }
     
 }
@@ -183,6 +190,7 @@
     margin-right: auto;
 }
 .tech-card-content{
+    min-height: 250px;
     .react-tabs{
         display: flex;
         justify-content: center;
@@ -193,6 +201,8 @@
         cursor: pointer;
         list-style-type: none;
         min-width: 175px;
+        text-align: right;
+        margin: 20px;
     }
     .sub-category.active{
         background: -webkit-linear-gradient(90deg, #71EA9F 0%, #A16FF6 100%);
@@ -312,6 +322,10 @@
 .review-card-link:hover{
   color: white;
 }
+.react-tabs__tab-list{
+    display: flex;
+    flex-direction: column;
+}
 @media (max-width:900px) {
     .home-section{
         background-image: url("../assets/images/home-bg-md.svg");
@@ -354,6 +368,39 @@
             justify-content: center;
         }    
     }
+    .tab-categories .tab-category{
+        padding: 5px 5px 5px 5px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .tab-container{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-container{
+        justify-content: center;
+    }
+    .react-tabs__tab-list{
+        flex-direction: row;
+    }
+    .sub-category{
+        text-align: center !important;
+    }
+    .why-section{
+
+        .why-content {
+            justify-content: center;
+        }
+    }
+    .project-section>.container>.d-flex{
+        flex-direction: column !important;
+        .project-all{
+            text-align: left;
+            margin: 10px;
+        }
+    }
 }
 
 
@@ -393,6 +440,41 @@
     .card-row {
         width: 100%;
     }
+    .tab-categories .tab-category{
+        padding: 5px 5px 5px 5px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .tab-container{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-container{
+        justify-content: center;
+    }
+    .react-tabs__tab-list{
+        flex-direction: row;
+    }
+    .sub-category{
+        text-align: center !important;
+    }
 
+    .industry-type {
+        margin: 10px;
+        width: 100%;
+    }
+    .why-section .why-content {
+        justify-content: center;
+    }
+    .project-section>.container>.d-flex{
+        flex-direction: column !important;
+        .project-all{
+            text-align: left;
+            margin: 10px;
+        }
+    }
 }
 

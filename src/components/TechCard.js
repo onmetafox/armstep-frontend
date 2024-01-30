@@ -6,11 +6,11 @@ const TechCard = ({data, className}) => {
     let classNames = cx( 'tech-card', className);
     return <div className={classNames}>
         <div className='tech-card-content m-2'>
-            <Tabs>
+            <Tabs className="tab-container">
                 <TabList>
                 {
                     data.map((item, index) => (
-                        <Tab key={index} className={`sub-category fs-s1 color-white m-4 text-end ${active==index?"active": ""}`} onClick={()=>setActive(index)}>
+                        <Tab key={index} className={`sub-category fs-s1 color-white m-4 ${active==index?"active": ""}`} onClick={()=>setActive(index)}>
                             {active==index?"-": ""} {item.title}
                         </Tab>
                     ))

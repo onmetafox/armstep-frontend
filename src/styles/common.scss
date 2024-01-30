@@ -8,6 +8,9 @@ body{
   flex-direction: column;
   min-height: calc(100vh - 253px);
 }
+:focus-visible {
+  outline: none;
+}
 .active-btn {
     background: linear-gradient(90deg, #71EA9F 0%, #A16FF6 100%);
     border: none;
