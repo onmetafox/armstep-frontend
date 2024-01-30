@@ -44,3 +44,8 @@
 .color-white{
     color: #FFFFFF;
 }
+.color-gradi{
+    background: -webkit-linear-gradient(90deg, #71EA9F 0%, #A16FF6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

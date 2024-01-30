@@ -6,6 +6,7 @@ import ErrorPage from "./views/404/index";
 import ServiceList from "./views/Services/serviceList";
 import ServiceDetail from "./views/Services/serviceDetail";
 import ProjectList from "./views/Projects/projectList";
+import ProjectDetail from "./views/Projects/projectDetail";
 
 const routes = [
   {
@@ -47,6 +48,13 @@ const routes = [
     title: 'Project List',
     href: '/projects',
     component: ProjectList,
+    children: [],
+    index: true
+  },
+  {
+    title: 'Project Detail',
+    href: 'project/:id',
+    component: ProjectDetail,
     children: [],
     index: true
   },
