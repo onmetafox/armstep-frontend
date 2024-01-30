@@ -1,0 +1,25 @@
+.error-page-section {
+    background: url("../../assets/images/404/404Bg.png"), lightgray -0.408px -7px / 100.054% 100.705% no-repeat;
+    background-size: cover;
+    padding: 205px 16px 70px;
+    margin-top: -72px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 100%;
+    }
+
+    .error-message {
+        color: #7B7F94;
+        text-align: center;
+        padding: 24px 0;
+    }
+    .back-to-home {
+        display: flex;
+        justify-content: center;
+        button {
+            padding: 16px 20px;
+        }
+    }
+}

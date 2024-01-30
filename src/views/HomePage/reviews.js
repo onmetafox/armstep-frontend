@@ -26,8 +26,8 @@ const Reviews = () => {
                 <Swiper slidesPerView={3} spaceBetween={30} centeredSlides={true} pagination={{ clickable: true, }} modules={[Pagination, Navigation]} loop={true}>
                 {
                     reviewData.map((item, index)=>(
-                        <SwiperSlide key={index}>
-                            <ReviewCard data = {item}/>
+                        <SwiperSlide>
+                            <ReviewCard data = {item} key={index}/>
                         </SwiperSlide>
                     ))
                 }

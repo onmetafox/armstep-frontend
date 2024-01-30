@@ -13,7 +13,7 @@ const Header = () => {
                 alt="Armstep Logo"
             />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-center'>
           <Nav className="mr-auto d-flex">
             <Nav.Link href="#home">Home</Nav.Link>

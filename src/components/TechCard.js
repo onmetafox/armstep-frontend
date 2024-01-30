@@ -1,39 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 import cx from "classnames";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 const TechCard = ({data, className}) => {
-    const [active, setActive] = useState(0);
+    console.log(data);
     let classNames = cx( 'tech-card', className);
     return <div className={classNames}>
         <div className='tech-card-content m-2'>
-            <Tabs>
-                <TabList>
-                {
-                    data.map((item, index) => (
-                        <Tab key={index} className={`sub-category fs-s1 color-white m-4 text-end ${active==index?"active": ""}`} onClick={()=>setActive(index)}>
-                            {active==index?"-": ""} {item.title}
-                        </Tab>
-                    ))
+            {/* <div className='fs-s1 color-white text-start'>{data.company}</div>
+            <div className='fs-b2 color-white'>{data.review}</div>
+            <div className='tech-card-user text-start'>
+                { data.profile &&
+                    <a href={data.profile} className='tech-card-link fs-c color-gray4' target='_blank'>
+                        <img src={data.user}/>&nbsp;&nbsp;
+                        {data.role} &nbsp;{data.name}
+                    </a>
                 }
-                </TabList>
-                {
-                    data.map((item, index) => (
-                        <TabPanel key={index} className="">
-                            <div className="tech-detail color-white fs-b1 m-4 text-start">{item.detail}</div>
-                            <div className="logo-container m-4">
-                                {item.icons.map((el, index) => (
-                                    <div key={index}>
-                                        <img src={el.icon} />
-                                        <div className="fs-b2 color-white mt-3">{el.title}</div>
-                                    </div>
-                                )
-                                )}
-                            </div>
-                        </TabPanel>
-                    ))
+                { !data.profile &&
+                    <div className='tech-card-link fs-c color-gray4'>
+                        <img src={data.user}/>&nbsp;&nbsp;
+                        {data.role} &nbsp;{data.name}
+                    </div>
                 }
-            </Tabs>
-            
+                
+            </div> */}
+            <div>
+                {
+                    data.map((item, index)=>(<div key={index}>{item.detail}</div>))
+                }
+            </div>
         </div>
     </div>
 }
