@@ -12,12 +12,12 @@ const Home = () => {
                 <CommonBtn title = {"Explore Services"} className={"color-white m-3"}/>
             </div>
             <div className='home-footer'>
-                <div className='fs-s1 color-white'>Trusted by:</div>
-                <div className='d-flex flex-row'>
-                    <span className='fs-s1 color-gray4'>Solar</span>
-                    <span className='fs-s1 color-gray4'>SerenityShield</span>
-                    <span className='fs-s1 color-gray4'>Graviton.xyz</span>
-                    <span className='fs-s1 color-gray4'>Slash.Digital</span>
+                <div className='fs-s1 color-white mtb-50'>Trusted by:</div>
+                <div className='row'>
+                    <span className='fs-s1 color-gray4 col-lg-3 col-sm-6 col-md-3'>Solar</span>
+                    <span className='fs-s1 color-gray4 col-lg-3 col-sm-6 col-md-3'>SerenityShield</span>
+                    <span className='fs-s1 color-gray4 col-lg-3 col-sm-6 col-md-3'>Graviton.xyz</span>
+                    <span className='fs-s1 color-gray4 col-lg-3 col-sm-6 col-md-3'>Slash.Digital</span>
                 </div>
             </div>
         </div>

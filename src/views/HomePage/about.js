@@ -1,7 +1,9 @@
 import React from 'react';
 import CommonBtn from 'src/components/button/CommonBtn';
 import aboutImg from "../../assets/images/about.svg";
+import { useNavigate } from "react-router-dom";
 const About = () => {
+    const navigate = useNavigate();
     return <div className='about-section'>
         <div className='container row'>
             <div className='col-lg-5 col-sm-12 col-md-12 about-img'>
@@ -14,7 +16,7 @@ const About = () => {
                     Our skills extend to front-end frameworks like React.js, Angular.js and we excel in back-end development using technologies such as Node.js, Django, and Flask.
                 </div>
                 <div className='m-5'>
-                    <CommonBtn title={"Read more"} className={"color-white"}/>
+                    <CommonBtn title={"Read more"} className={"color-white"} onClick={()=> {navigate("/about-us")}}/>
                 </div>
             </div>
         </div>

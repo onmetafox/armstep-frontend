@@ -42,7 +42,7 @@ const Services = () =>{
             <div className='services-container row'>
                 { !carousel && serviceData.map((item, index) => (
                     <div className='card-row' key={index}>
-                        <ServiceCard data={item} />
+                        <ServiceCard data={item} landing={true} key={index} index={index}/>
                     </div>
                 ))}
                 { carousel && (
@@ -50,8 +50,8 @@ const Services = () =>{
                         {
                             serviceData.map((item, index) => (
                                 <SwiperSlide>
-                                    <div className='card-row' key={index}>
-                                        <ServiceCard data={item} />
+                                    <div className='card-row' key={index} >
+                                        <ServiceCard data={item} landing={true}  key={index} index={index}/>
                                     </div>
                                 </SwiperSlide>
                             ))

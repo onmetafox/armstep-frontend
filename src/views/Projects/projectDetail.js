@@ -21,7 +21,7 @@ const ProjectDetail = () => {
     return <div className="project-detail-section">
         <div className="title-section">
             <div className="detail-home container">
-                <div className="color-white fs-h1 mt-5">{data.title}</div>
+                <div className="color-white fs-h1 mt-160">{data.title}</div>
                 <div className="detail-home-img"><img src = {data.img} alt ="main"/></div>
             </div>
         </div>
@@ -42,11 +42,11 @@ const ProjectDetail = () => {
                 </div>
             </div>
 
-            <div className="row mt-5">
+            <div className="row mtb-100">
                 <div className="col-lg-4 col-md-12 col-sm-12 color-white fs-h3">About client</div>
                 <div className="col-lg-8 col-md-12 col-sm-12 color-white fs-b">{addLineBreak(data.client)}</div>
             </div>
-            <div className="row mt-5">
+            <div className="row mtb-100">
                 <div className="col-lg-4 col-md-12 col-sm-12 color-white fs-h3">Task Overview</div>
                 <div className="col-lg-8 col-md-12 col-sm-12 color-white fs-b">
                     {addLineBreak(data.overview)} <br></br><br></br><br></br>
@@ -77,7 +77,7 @@ const ProjectDetail = () => {
                     </div>
                 </div>
             </div>
-            <div className="row mt-5">
+            <div className="row mtb-100">
                 <div className="col-lg-4 col-md-12 col-sm-12 color-white fs-h3">Results</div>
                 <div className="col-lg-8 col-md-12 col-sm-12 color-white fs-b">{addLineBreak(data.result)}</div>
 

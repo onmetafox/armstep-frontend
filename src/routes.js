@@ -2,7 +2,6 @@ import Home from "./views/HomePage/index";
 import AboutUs from "./views/AboutUsPage/index";
 import Team from "./views/Team/index";
 import TalkToUs from "./views/TalkToUs/index";
-import ErrorPage from "./views/404/index";
 import ServiceList from "./views/Services/serviceList";
 import ServiceDetail from "./views/Services/serviceDetail";
 import ProjectList from "./views/Projects/projectList";
@@ -62,13 +61,6 @@ const routes = [
     title: 'Talk to Us',
     href: '/talk-to-us',
     component: TalkToUs,
-    children: [],
-    index: true
-  },
-  {
-    title: '404',
-    href: '/404',
-    component: ErrorPage,
     children: [],
     index: true
   },

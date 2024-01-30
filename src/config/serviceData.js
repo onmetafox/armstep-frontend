@@ -26,6 +26,7 @@ export const serviceData = [
         intro: "Web Development (MERN, MEAN Stacks) Our web development services encompass the use of cutting-edge technology stacks, including MERN (MongoDB, Express.js, React, Node.js) and MEAN (MongoDB, Express.js, Angular, Node.js). ",
         detail: "Our web development services are engineered to empower your digital presence, ensuring your online footprint is as robust and dynamic as your business. Dive into the world of cutting-edge web solutions with us.",
         content: "At Armstep, we are not just developers; we are architects of online experiences. Our web development services go beyond conventional coding; they are a meticulous craft aimed at delivering seamless, high-performance websites. From concept to execution, we thrive on turning your ideas into lines of code that resonate with your audience.",
+        subcontent: "Websites' and Web Applications' development using MERN and MEAN stacks. Web3 Wallets'  integration into websites",
         category: [
             {
                 title: "MERN Stack",
@@ -77,6 +78,7 @@ export const serviceData = [
         intro: "In today’s fast-paced digital landscape, a robust mobile presence is not just an option, but a necessity. Our agency specializes in creating dynamic, efficient, and user-friendly mobile applications for both iOS and Android platforms. Leveraging advanced technologies like React Native, Kotlin, Swift, and Java.",
         detail: "Our Mobile Development services are not just about coding; they're about creating intuitive and seamless experiences that leave a lasting impact.",
         content: "Whether you're looking to launch your first app, enhance an existing one, or explore cross-platform solutions, our team of skilled developers is ready to turn your mobile vision into a reality. From sleek interfaces to robust functionalities, we thrive on delivering mobile solutions that go beyond expectations.",
+        subcontent: "Mobile applications' development on Android and IOS devices using Kotlin, Swift and React Native",
         category: [
             {
                 title: "IOS",
@@ -122,6 +124,7 @@ export const serviceData = [
         intro: "Our agency is dedicated to delivering state-of-the-art blockchain solutions, harnessing the power of leading languages and frameworks including Solidity, Rust, Go, Truffle, Hardhat, Foundry, and Alchemy. ",
         detail: "Our web development services are engineered to empower your digital presence, ensuring your online footprint is as robust and dynamic as your business. Dive into the world of cutting-edge web solutions with us.",
         content: "Our Blockchain Development services are centered around harnessing the power of distributed ledger technology to create secure, transparent, and immutable solutions. Whether you're a startup exploring blockchain or an enterprise seeking to integrate this transformative technology, our team is here to guide you through every step of the journey.",
+        subcontent:"Blockchain Protocols' (new ones or forks of existing blockchains like Ethereum, Solana, Polkadot, etc.) and Smart Contracts' Development on EVM-compatible, (Ethereum, Binance Smart Chain, Polygon, etc.).",
         category: [
             {
                 title: "Blockchain",
@@ -167,6 +170,7 @@ export const serviceData = [
         intro: "Web Development (MERN, MEAN Stacks) Our web development services encompass the use of cutting-edge technology stacks, including MERN (MongoDB, Express.js, React, Node.js) and MEAN (MongoDB, Express.js, Angular, Node.js). ",
         detail: "Whether you're a startup looking to implement machine learning or an enterprise seeking to harness the power of artificial intelligence, we're here to make it happen.",
         content: "Our approach involves understanding your unique business challenges and objectives to craft AI solutions that make a real impact. From predictive analytics to natural language processing, our team specializes in turning data into a strategic asset, driving efficiency, and fostering innovation.",
+        subcontent: "AI Model Development/Large Language Models Integration/ Training and Testing/Audio Processing/Natural Language Processing (NLP)",
         category: [
             {
                 title: "AI & ML",
