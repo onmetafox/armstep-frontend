@@ -2,7 +2,9 @@ import React from 'react';
 import CommonBtn from 'src/components/button/CommonBtn';
 import ProjectCard from 'src/components/projectCard';
 import { projectData } from 'src/config/projectData';
+import { useNavigate } from "react-router-dom";
 const Project = () => {
+    const navigate = useNavigate();
     return <div className='project-section'>
         <div className='container'>
             <div className='d-flex'>
@@ -11,7 +13,7 @@ const Project = () => {
                     <div className='fs-s1 color-white m-2'>As a seasoned creator of contemporary, user-<br></br>friendly web designs and digital solutions, I aim <br></br>to assist you in constructing the brand of your fantasies.</div>
                 </div>
                 <div className='text-end project-all'>
-                    <CommonBtn title={"See all"} className={"color-white"}/>
+                    <CommonBtn title={"See all"} className={"color-white"} onClick = {()=> {navigate("/projects")}}/>
                 </div>
             </div>
             <div className='project-container row'>
