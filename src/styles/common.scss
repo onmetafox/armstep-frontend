@@ -30,6 +30,7 @@ body{
     justify-content: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Adjust the shadow as per your design
     transition: background-color 0.3s, box-shadow 0.3s;
+    height: 50px;
   
     &:hover {
         background: linear-gradient(90deg, #71EA9F 0%, #A16FF6 95%);
@@ -66,6 +67,7 @@ body{
     background-image: linear-gradient(black, black), radial-gradient(circle at top left, #71EA9F,#A16FF6);
     background-origin: border-box;
     background-clip: padding-box, border-box;
+    height: 50px;
 }
 .container{
     max-width: 1440px !important;
