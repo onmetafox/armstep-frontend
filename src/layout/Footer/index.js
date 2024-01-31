@@ -15,10 +15,10 @@ const Footer = () => {
               <p className='footer-email'>armstep@development</p>
               <div className="social-icons d-flex">
                 {/* Replace with actual icons */}
-                <a href='#'><i class="fa-brands fa-github"></i></a>
-                <a href='#'><i class="fa-brands fa-x-twitter"></i></a>
-                <a href='#'><i class="fa-brands fa-upwork"></i></a>
-                <a href='#'><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href='#'><i className="fa-brands fa-github"></i></a>
+                <a href='#'><i className="fa-brands fa-x-twitter"></i></a>
+                <a href='#'><i className="fa-brands fa-upwork"></i></a>
+                <a href='#'><i className="fa-brands fa-linkedin-in"></i></a>
               </div>
             </div>
           </div>
