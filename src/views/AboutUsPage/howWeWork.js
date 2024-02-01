@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-// import RangeSlider from 'react-bootstrap/RangeSlider';
+import processImg from "../../assets/images/progress-circle.svg";
 
 const ProcessStep = ({ active, stepNumber, description }) => {
   return (
@@ -9,6 +9,7 @@ const ProcessStep = ({ active, stepNumber, description }) => {
     </div>
   );
 };
+
 const HowWeWork = () => {
   const [sliderValue, setValue] = useState(0); // Initial value for the slider
   const containerRef = useRef(null);
@@ -71,7 +72,7 @@ const HowWeWork = () => {
             step={1}
             className="progress-range-slider"
           />
-          <div className='progress-circle' style={{ left: `calc(${sliderValue * 25}% +  40px / 4 * ${sliderValue})` }}></div>
+          <div className='progress-circle' style={{ left: `calc(${sliderValue * 25}% +  65px / 4 * ${sliderValue})` }}></div>
           <div className='progress-line'></div>
           {steps.map((_, index) => (
             <div
@@ -79,26 +80,7 @@ const HowWeWork = () => {
               className={`progress-prev-circle ${index < sliderValue ? 'active' : ''}`}
               style={{ left: `calc(${index * 25}% +  65px / 4 * ${index})` }}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
-                <circle cx="48.001" cy="48" r="4.11429" fill="#71EA9F" />
-                <circle cx="48.0013" cy="47.9999" r="20.9857" stroke="url(#paint0_linear_452_20622)" />
-                <circle cx="48.0009" cy="47.9999" r="35.1571" stroke="url(#paint1_linear_452_20622)" />
-                <circle cx="48" cy="48" r="47.5" stroke="url(#paint2_linear_452_20622)" />
-                <defs>
-                  <linearGradient id="paint0_linear_452_20622" x1="26.5156" y1="69.4856" x2="69.4871" y2="69.4856" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#71EA9F" />
-                    <stop offset="1" stop-color="#A16FF6" />
-                  </linearGradient>
-                  <linearGradient id="paint1_linear_452_20622" x1="12.3437" y1="83.6571" x2="83.658" y2="83.6571" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#71EA9F" />
-                    <stop offset="1" stop-color="#A16FF6" />
-                  </linearGradient>
-                  <linearGradient id="paint2_linear_452_20622" x1="0" y1="96" x2="96" y2="96" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#71EA9F" />
-                    <stop offset="1" stop-color="#A16FF6" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              <img src={processImg} alt='Progress' />
             </div>
           ))}
         </div>

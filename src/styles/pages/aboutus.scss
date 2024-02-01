@@ -2,7 +2,7 @@
     background-image: url("../../assets/images/commons/aboutBk.png");
     background-size: 100% 100%;
     line-height: 1.3;
-    padding: 0px 12px;
+    padding: 100px 12px 0;
 
     .container {
         display: flex;
@@ -13,10 +13,6 @@
         width: 100%;
         height: 100%;
         position: relative;
-
-        .title {
-            margin-top: 208px;
-        }
 
         .paragraph {
             gap: 47px;
@@ -29,18 +25,13 @@
         .about-analysis {
             width: 100%;
             gap: 40px;
-            margin-top: 80px;
+            margin-bottom: 80px;
             justify-content: space-between;
         }
 
         .about-content {
-            width: 100%;
-            gap: 40px;
-            margin: 80px 0 40px;
-
             .about-home-f-img {
-                width: 30%;
-                border-radius: 24px;
+                width: 60%;
                 overflow: hidden;
 
                 img {
@@ -50,15 +41,18 @@
                 }
 
                 @media (max-width: 992px) {
-                    display: none;
-                    width: 40%;
+                    width: 100%;
                 }
             }
 
             .about-home-s-container {
                 flex-direction: column;
-                width: 70%;
-                gap: 40px;
+                width: 40%;
+                gap: 32px;
+
+                .title {
+                    text-align: left;
+                }
 
                 .about-home-s-img {
                     width: 100%;
@@ -72,23 +66,9 @@
                     }
                 }
 
-                .about-home-f-img {
-                    display: block;
-                }
-
-                @media (min-width: 992px) {
-                    .about-home-f-img {
-                        display: none;
-                    }
-                }
-
                 @media (max-width: 992px) {
                     width: 100%;
-
-                    .about-home-image-wrapper {
-                        display: flex;
-                        gap: 20px;
-                    }
+                    gap: 8px;
                 }
             }
         }
@@ -139,6 +119,10 @@
                     position: absolute;
                     top: 50%;
                     transform: translate(30px, -50%);
+
+                    img {
+                        width: 96px;
+                    }
                 }
 
                 .progress-prev-circle.active {
@@ -159,7 +143,7 @@
                     position: absolute;
                     top: 50%;
                     transform: translate(0, -50%);
-                    background: url("../../assets/images/commons/Group 1000004164.png");
+                    background: url("../../assets/images/progress-circle.svg");
                     background-size: 100% 100%;
                     width: 154px;
                     height: 154px;
@@ -223,11 +207,27 @@
     }
 }
 
+.desktop-hidden {
+    display: none;
+}
+
+@media(max-width: 1250px) {
+    .about-how-section {
+        padding: 120px 32px;
+
+        .container {
+            padding: 0 !important;
+        }
+    }
+}
+
 @media(max-width:992px) {
     .about-home-section {
+        padding-top: 200px;
+
         .container {
             .about-content {
-                margin: 40px 0;
+                flex-direction: column-reverse;
             }
 
             .paragraph {
@@ -241,8 +241,9 @@
 
             .about-analysis {
                 column-gap: 24px;
-                row-gap: 64px;
+                row-gap: 40px;
                 flex-wrap: wrap;
+                margin: 40px 0;
             }
 
             .about-card {
@@ -264,24 +265,46 @@
             }
         }
     }
+
+    .desktop-hidden {
+        display: block;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
     .about-how-section {
+        padding-left: 16px;
+        padding-right: 16px;
+
         .container {
             .how-container {
                 .how-progress {
 
-                    .progress-range-slider::-webkit-slider-thumb,
-                    .progress-circle {
+                    .progress-range-slider::-webkit-slider-thumb {
                         width: 96px;
                         height: 96px;
+                        background: url("../../assets/images/progress-circle.svg");
+                        background-size: cover;
+                    }
+
+                    .progress-circle {
+                        display: none;
+                    }
+
+                    .progress-line {
+                        height: 2px;
+                        top: calc(50% - 2px);
                     }
 
                     .progress-prev-circle {
                         transform: translate(0, -50%);
+                        display: none !important;
 
-                        svg {
+                        img {
                             width: 56px;
                             height: 56px;
                         }
