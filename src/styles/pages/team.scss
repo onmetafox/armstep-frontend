@@ -4,12 +4,16 @@ body.modal-open {
 
 .core-team-section {
   background: #000;
+  position: relative;
+  overflow: hidden;
   padding: 208px 0 120px;
 
   .team-members-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 10;
     padding-top: 40px;
     gap: 40px;
 
@@ -50,8 +54,24 @@ body.modal-open {
         display: flex;
         align-items: center;
         gap: 24px;
+
+        a:hover {
+          color: #71EA9F;
+        }
       }
     }
+  }
+
+  .team-section-bg-l {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+  }
+
+  .team-section-bg-r {
+    position: absolute;
+    top: 0;
+    left: 50%;
   }
 
   .modal-overlay {
@@ -77,6 +97,8 @@ body.modal-open {
       display: flex;
       flex-direction: column;
       gap: 16px;
+      max-height: calc(100vh - 32px);
+      overflow-y: auto;
 
       .wrapper {
         display: flex;
@@ -98,6 +120,10 @@ body.modal-open {
         display: flex;
         align-items: center;
         gap: 16px;
+
+        a:hover {
+          color: #71EA9F;
+        }
       }
 
       .member-about-section p {
