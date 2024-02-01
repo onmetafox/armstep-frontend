@@ -1,7 +1,7 @@
 import React from 'react';
 import upworkImg from "../assets/images/upwork.svg";
 import linkedinImg from "../assets/images/linkedin.svg";
-import closeModalBtn from "../assets/images/x.svg";
+import closeModalImg from "../assets/images/x.svg";
 
 const TeamMemberModal = ({ isOpen, onClose, member }) => {
     if (!isOpen) return null;
@@ -10,7 +10,7 @@ const TeamMemberModal = ({ isOpen, onClose, member }) => {
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={e => e.stopPropagation()}>
                 <button className="close-button" onClick={onClose}>
-                    <img src={closeModalBtn} alt="Close" />
+                    <img src={closeModalImg} alt="Close" />
                 </button>
                 <div className="wrapper">
                     <img src={member.imgUrl} alt={member.name} className="modal-image" />

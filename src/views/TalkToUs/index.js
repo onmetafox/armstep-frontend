@@ -1,21 +1,9 @@
 import React, { useState } from 'react';
 import SelectBox from 'src/components/SelectBox';
+import TalkSuccessModal from 'src/components/TalkSuccessModal';
+import { contactData } from 'src/config/contactData';
+import arrowImg from "../../assets/images/arrow.svg";
 import '../../styles/pages/talkus.scss';
-
-const projectSizes = ["1-3 months", "3-6 months", "6-12 months"];
-const services = [
-  { value: 'web', label: 'Web' },
-  { value: 'mobile', label: 'Mobile' },
-  { value: 'blockchain', label: 'Blockchain' },
-  { value: 'ai-ml', label: 'AI and Machine Learning' },
-];
-const techStacks = [
-  { value: 'web', label: 'Web' },
-  { value: 'mobile', label: 'Mobile' },
-  { value: 'blockchain', label: 'Blockchain' },
-  { value: 'ai-ml', label: 'AI and Machine Learning' },
-];
-
 
 const TalkToUs = () => {
 
@@ -24,6 +12,18 @@ const TalkToUs = () => {
   const changeProjectSize = (projectSize) => {
     setSelectedProjectSize(projectSize)
   }
+
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleSendData = () => {
+    document.body.classList.add('modal-open');
+    setIsSuccess(true);
+  };
+
+  const closeModal = () => {
+    document.body.classList.remove('modal-open');
+    setIsSuccess(false);
+  };
 
   return (
     <section className="talk-to-us-section color-white">
@@ -44,18 +44,18 @@ const TalkToUs = () => {
               <div className="project-sizes">
                 <p className="fs-c">Size of project</p>
                 <div className="project-sizes-wrapper">
-                  {projectSizes.map(projectSize => (
+                  {contactData.projectSizes.map(projectSize => (
                     <p key={projectSize} onClick={() => changeProjectSize(projectSize)} className={`fs-c ${projectSize === selectedProjectSize ? 'active' : ''}`}>{projectSize}</p>
                   ))}
                 </div>
               </div>
               <SelectBox
-                options={services}
+                options={contactData.services}
                 className="contact-form-dropdown fs-b"
                 placeholder="Choose from our services"
               />
               <SelectBox
-                options={techStacks}
+                options={contactData.techStacks}
                 className="contact-form-dropdown fs-b"
                 placeholder="Choose from our technology stack"
               />
@@ -64,12 +64,18 @@ const TalkToUs = () => {
           </div>
         </div>
         <div className="contact-form-footer">
-          <p className="terms-text">
+          <p className="terms-text fs-c">
             By clicking this button you accept <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
           </p>
-          <button className="send-button">Send</button>
+          <button className="active-btn" onClick={() => handleSendData()}>
+            Send <span className="arrow"><img src={arrowImg} /></span>
+          </button>
         </div>
       </div>
+      <TalkSuccessModal
+        isOpen={!!isSuccess}
+        onClose={closeModal}
+      />
     </section>
   );
 };

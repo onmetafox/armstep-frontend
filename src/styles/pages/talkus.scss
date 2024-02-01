@@ -120,6 +120,37 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      .terms-text a {
+        color: #ffffff;
+      }
+
+      @media (max-width: 992px) {
+        padding: 24px 69px 24px 60px;
+        gap: 35px;
+      }
+
+      @media (max-width: 768px) {
+        padding: 24px 16px 24px 16px;
+      }
+    }
+  }
+
+  .modal-overlay {
+    .modal-content {
+      max-width: 384px;
+      padding: 40px 32px;
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        padding: 40px 16px;
+      }
     }
   }
 }
@@ -175,15 +206,18 @@
         .contact-form-section {
           .form-body-wrapper {
             padding: 24px 16px !important;
+
             .project-sizes {
               .project-sizes-wrapper {
                 gap: 8px;
               }
             }
           }
+
           h5 {
             padding: 16px 0 9px 16px;
           }
+
           &:last-child h5 {
             padding: 24px 0 16px 16px;
           }
