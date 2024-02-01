@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/images/commons/Logo.png';
 
 const Footer = () => {
@@ -8,62 +9,62 @@ const Footer = () => {
       <div className='container'>
         <div className="footer-content">
           <div className="footer-section">
-            <div className="footer-logo-wrapper">
+            <Link to='/' className="footer-logo-wrapper">
               <img src={logo} alt="Armstep Logo" className="footer-logo" />
-            </div>
+            </Link>
             <div className="wrapper">
               <p className='footer-email'>armstep@development</p>
               <div className="social-icons d-flex">
                 {/* Replace with actual icons */}
-                <a href='#'><i className="fa-brands fa-github"></i></a>
-                <a href='#'><i className="fa-brands fa-x-twitter"></i></a>
-                <a href='#'><i className="fa-brands fa-upwork"></i></a>
-                <a href='#'><i className="fa-brands fa-linkedin-in"></i></a>
+                <Link to='#'><i className="fa-brands fa-github"></i></Link>
+                <Link to='#'><i className="fa-brands fa-twitter"></i></Link>
+                <Link to='#'><i className="fa-brands fa-upwork"></i></Link>
+                <Link to='#'><i className="fa-brands fa-linkedin-in"></i></Link>
               </div>
             </div>
           </div>
           <div className="footer-section d-flex">
             <div className="footer-menu d-flex">
               <div className="footer-category">
-                <a href='/' className='fs-button'>Home</a>
+                <Link to='/' className='fs-button'>Home</Link>
                 <div className="d-flex">
-                  <a href='#' className="sub-menu">Services</a>
-                  <a href='#' className="sub-menu">Projects</a>
-                  <a href='#' className="sub-menu">Industries</a>
-                  <a href='#' className="sub-menu">Testimonials</a>
+                  <Link to='/home#service' className="sub-menu">Services</Link>
+                  <Link to='/home#project' className="sub-menu">Projects</Link>
+                  <Link to='/home#industry' className="sub-menu">Industries</Link>
+                  <Link to='/home' className="sub-menu">Testimonials</Link>
                 </div>
               </div>
               <div className="footer-category">
-                <a href='/services' className='fs-button'>Services</a>
+                <Link to='/services' className='fs-button'>Services</Link>
                 <div className="d-flex">
-                  <a href='/service/0' className="sub-menu">Web</a>
-                  <a href='/service/1' className="sub-menu">Mobile</a>
-                  <a href='/service/2' className="sub-menu">Blockchain</a>
-                  <a href='/service/3' className="sub-menu">AI && ML</a>
+                  <Link to='/service/0' className="sub-menu">Web</Link>
+                  <Link to='/service/1' className="sub-menu">Mobile</Link>
+                  <Link to='/service/2' className="sub-menu">Blockchain</Link>
+                  <Link to='/service/3' className="sub-menu">AI && ML</Link>
                 </div>
               </div>
               <div className="footer-category">
-                <a href='/portfolio' className='fs-button'>Portfolio</a>
+                <Link to='/projects' className='fs-button'>Portfolio</Link>
                 <div className="d-flex">
-                  <a href='#' className="sub-menu">Graviton</a>
-                  <a href='#' className="sub-menu">demoverse</a>
-                  <a href='#' className="sub-menu">slash.digital</a>
-                  <a href='#' className="sub-menu">tribeone</a>
-                  <a href='#' className="sub-menu">serenityshield</a>
+                  <Link to='/project/0' className="sub-menu">Graviton</Link>
+                  <Link to='/project/1' className="sub-menu">demoverse</Link>
+                  <Link to='/project/2' className="sub-menu">slash.digital</Link>
+                  <Link to='/project/3' className="sub-menu">tribeone</Link>
+                  <Link to='/project/4' className="sub-menu">serenityshield</Link>
                 </div>
               </div>
               <div className="footer-category">
-                <a href='/about-us' className='fs-button'>About</a>
+                <Link to='/about-us' className='fs-button'>About</Link>
                 <div className="d-flex">
-                  <a href='/about-us' className="sub-menu">About</a>
-                  <a href='/team' className="sub-menu">Core Team</a>
+                  <Link to='/about-us' className="sub-menu">About</Link>
+                  <Link to='/team' className="sub-menu">Core Team</Link>
                 </div>
               </div>
               <div className="footer-category">
-                <a href='/legal' className='fs-button'>Legal</a>
+                <Link to='/legal' className='fs-button'>Legal</Link>
                 <div className="d-flex">
-                  <a href='#' className="sub-menu">Privacy & Policy</a>
-                  <a href='#' className="sub-menu">Terms & Condition</a>
+                  <Link to='#' className="sub-menu">Privacy & Policy</Link>
+                  <Link to='#' className="sub-menu">Terms & Condition</Link>
                 </div>
               </div>
             </div>

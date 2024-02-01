@@ -26,7 +26,7 @@ export const projectData = [
         team: ["1 Full Stack", "1 Blockchain Developer"],
         duration: "6 months",
         stacks: ["MERN stack", "Solidity", "Foundry"],
-        result: "All three products were delivered punctually, meeting or even exceeding the high-quality standards set for them. \n \nOur team's dedication and expertise ensured that each product was not only completed within the specified deadlines but also with an emphasis on excellence in design, functionality, and user experience.This commitment to delivering top-notch products paid off, as the client expressed full satisfaction with the end results. \nTheir positive feedback is a testament to our team's hard work, attention to detail, and ability to fulfill their expectations in the Web3 domain. This successful project completion reinforces our reputation for reliability and proficiency in delivering value to our clients."
+        result: "All three products were delivered punctually, meeting or even exceeding the high-quality standards set for them. \nOur team's dedication and expertise ensured that each product was not only completed within the specified deadlines but also with an emphasis on excellence in design, functionality, and user experience.This commitment to delivering top-notch products paid off, as the client expressed full satisfaction with the end results. \nTheir positive feedback is a testament to our team's hard work, attention to detail, and ability to fulfill their expectations in the Web3 domain. This successful project completion reinforces our reputation for reliability and proficiency in delivering value to our clients."
     },
     {
         title:"Demoverse",
@@ -36,12 +36,12 @@ export const projectData = [
         industry:"Blockchain & Web3",
         platform: "Web",
         client: "DemoVerse is a musician-led platform that is revolutionizing the music industry by harnessing the power of blockchain technology. Their mission is to empower artists to attain both financial independence and creative freedom. They fully understand the challenges musicians face in the industry and are dedicated to reshaping it to better serve the interests and aspirations of the talented individuals who create the music we love.",
-        overview: "The task was to develop music web3 marketplace, where artists' songs could be digitalized and become NFTs, which these creators could share / sell / monetize inside of the platform. \n \nFor that their local token on Ethereum and Polygon should have been created along with its smart contract.",
+        overview: "The task was to develop music web3 marketplace, where artists' songs could be digitalized and become NFTs, which these creators could share / sell / monetize inside of the platform. For that their local token on Ethereum and Polygon should have been created along with its smart contract.",
         link: "https://github.com",
         team: ["1 Full Stack Web3", "1 Mobile Developer"],
         duration: "3 months",
         stacks: ["MERN stack", "Solidity", "Hardhat", "React Native"],
-        result: "The integration of local tokens and smart contracts on Ethereum and Polygon has significantly boosted security and usability in the Music Web3 Marketplace. \n\nWith a user-friendly interface and community-focused features, the platform empowers artists and transforms the music industry in the Web3 era. We successfully delivered both the smart contract infrastructure and the marketplace web app MVP, meeting the client's timeline and passing the final testing phase with full client satisfaction. This marks a groundbreaking step in empowering artists to control their music and finances through NFTs and blockchain technology."
+        result: "The integration of local tokens and smart contracts on Ethereum and Polygon has significantly boosted security and usability in the Music Web3 Marketplace. \nWith a user-friendly interface and community-focused features, the platform empowers artists and transforms the music industry in the Web3 era. We successfully delivered both the smart contract infrastructure and the marketplace web app MVP, meeting the client's timeline and passing the final testing phase with full client satisfaction. This marks a groundbreaking step in empowering artists to control their music and finances through NFTs and blockchain technology."
     },
     {
         title:"Slash.Digital",

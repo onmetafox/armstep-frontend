@@ -153,4 +153,15 @@
       }
     }
   }
+
+  @media (max-width: 360px) {
+    .footer-section {
+      .footer-logo-wrapper {
+        img {
+          width: 100px;
+          height: auto;
+        }
+      }
+    }
+  }
 }
