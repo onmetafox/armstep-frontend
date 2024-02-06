@@ -28,7 +28,7 @@ const Reviews = () => {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-    return <div className='review-section'>
+    return <div className='review-section' id='review'>
         <div className='container'>
             <div className='left-effect'>
                 <img src = {leftEffect} alt='left effect'/>

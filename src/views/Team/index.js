@@ -30,10 +30,10 @@ const Team = () => {
         ))}
       </div>
       <div class="team-section-bg-r">
-        <img src={teamBgRight} />
+        <img src={teamBgRight} alt='team bg right'/>
       </div>
       <div class="team-section-bg-l">
-        <img src={teamBgLeft} />
+        <img src={teamBgLeft} alt='team bg left'/>
       </div>
       <TeamMemberModal
         isOpen={!!selectedMember}

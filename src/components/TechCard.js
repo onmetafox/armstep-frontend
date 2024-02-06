@@ -16,10 +16,12 @@ const TechCard = ({data, className}) => {
                     ))
                 }
                 </TabList>
+                <div style={{width:"100%"}}>
                 {
                     data.map((item, index) => (
+                        
                         <TabPanel key={index} className="">
-                            <div className="tech-detail color-white fs-b1 m-4 text-start">{item.detail}</div>
+                            <div className="tech-detail color-white fs-b1 mt-4 mb-4 text-start">{item.detail}</div>
                             <div className="logo-container m-4">
                                 {item.icons.map((el, index) => (
                                     <div key={index}>
@@ -32,8 +34,8 @@ const TechCard = ({data, className}) => {
                         </TabPanel>
                     ))
                 }
+                </div>
             </Tabs>
-            
         </div>
     </div>
 }

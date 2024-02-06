@@ -6,7 +6,7 @@ const ActiveBtn = ({ onClick, className }) => {
   let classNames = cx( 'active-btn', className);
   return (
     <button className={classNames} onClick={onClick}>
-      Talk to Us <span className="arrow"><img src={arrowImg} /></span>
+      Talk to Us <span className="arrow"><img src={arrowImg} alt='arrow right'/></span>
     </button>
   );
 };

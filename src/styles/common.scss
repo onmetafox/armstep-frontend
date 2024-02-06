@@ -84,7 +84,9 @@ body {
   max-width: 1440px !important;
   padding: 20px;
 }
-
+ol, ul {
+  padding-left: 0;
+}
 .common-card {
   display: flex;
   align-items: flex-start;

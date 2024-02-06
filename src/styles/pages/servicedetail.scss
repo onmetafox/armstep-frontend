@@ -8,7 +8,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 150px;
         gap: 50px;
         .service-card{
             padding:80px
@@ -16,6 +16,7 @@
     };
     .detail {
         display: flex;
+        flex-direction: row;
 
     }
     .technical-title{
@@ -52,4 +53,32 @@
     text-align: left;
     max-width: 575px;
     padding-left: 50px;
+}
+
+
+@media (max-width:900px) {
+    .detail {
+        flex-direction: column !important;
+    }
+    .detail-section {
+        background-image: url("../../assets/images/service-bg-md.svg");
+    }
+    .technical-title{
+        img{
+            display: none;
+        }
+    }
+}
+@media (max-width:400px) {
+    .detail {
+        flex-direction: column !important;
+    }
+    .detail-section {
+        background-image: url("../../assets/images/service-bg-sm.svg");
+    }
+    .technical-title{
+        img{
+            display: none;
+        }
+    }
 }
