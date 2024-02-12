@@ -10,7 +10,6 @@ import circlePlusImg from "../../assets/icons/circle-plus.svg";
 const ServiceDetail = () => {
     const { id } = useParams();
     const [data] = useState(serviceData[id]);
-    console.log(data);
     return <div className="detail-section">
         <div className = "container detail-container">
             <div className="color-white fs-h1">{data.title}</div>

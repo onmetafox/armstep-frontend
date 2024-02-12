@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import logo from '../../assets/images/logo.svg';
+import logo from '../../assets/images/commons/Logo.png';
 import menuIcon from '../../assets/images/menu.svg';
 import closeMenuIcon from '../../assets/images/x.svg';
 import TalkToUsButton from 'src/components/button/ActiveBtn';
