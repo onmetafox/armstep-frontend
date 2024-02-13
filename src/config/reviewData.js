@@ -42,7 +42,8 @@ export const reviewData = [
         user:demoverseUser,
         company: "Demo Verse",
         review: "Their adeptness in crafting dynamic, user-centric platforms truly set them apart. A reliable partner for bringing visions to life!",
-        name: "Anna C.",
+        name: "Anna Chan",
+        profile: "https://www.linkedin.com/in/annajchan"
     },
     {
         logo: superlocalImg,

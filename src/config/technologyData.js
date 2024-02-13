@@ -8,6 +8,7 @@ import reactLogo from "../assets/logos/react.svg";
 import nodeLogo from "../assets/logos/node.svg";
 import swiftLogo from "../assets/logos/swift.svg";
 import javaLogo from "../assets/logos/java.svg";
+import angularLogo from "../assets/logos/angular.svg";
 import kotlinLogo from "../assets/logos/kotlin.svg";
 import solidityLogo from "../assets/logos/solidity.svg";
 import rustLogo from "../assets/logos/rust.svg";
@@ -49,6 +50,10 @@ export const technologyData = [
                 title: "MEAN Stack",
                 detail: "MEAN enables developers to build dynamic and scalable web applications entirely in JavaScript, making it a versatile choice for creating modern, real-time, and single-page applications.",
                 icons:[
+                    {
+                        title: "Angular.js",
+                        icon: angularLogo
+                    },
                     {
                         title: "MongoDB",
                         icon: mongoLogo

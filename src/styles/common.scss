@@ -78,6 +78,10 @@ body {
   background-image: linear-gradient(black, black), radial-gradient(circle at top left, #71EA9F, #A16FF6);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  &:hover{
+    background-image: linear-gradient(black, black), radial-gradient(circle at top left, #A16FF6, #71EA9F);
+    transition-delay:1s;
+  }
 }
 
 .container {
