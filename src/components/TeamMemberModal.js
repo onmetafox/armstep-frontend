@@ -2,7 +2,7 @@ import React from 'react';
 import upworkImg from "../assets/images/upwork.svg";
 import linkedinImg from "../assets/images/linkedin.svg";
 import closeModalImg from "../assets/images/x.svg";
-
+import { addLineBreak } from 'src/libs/validate';
 const TeamMemberModal = ({ isOpen, onClose, member }) => {
     if (!isOpen) return null;
 
@@ -29,7 +29,7 @@ const TeamMemberModal = ({ isOpen, onClose, member }) => {
                 </div>
                 <div className="member-about-section">
                     <h5 className="fs-b">About</h5>
-                    <p className="fs-c">{member.about}</p>
+                    <p className="fs-c">{addLineBreak(member.about)}</p>
                 </div>
                 <hr></hr>
                 <div className="technology-stack">

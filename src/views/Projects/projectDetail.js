@@ -5,19 +5,11 @@ import "../../styles/pages/projectdetail.scss";
 import StartUp from "../HomePage/startup";
 import leftImg from "../../assets/images/left-side-effect.svg";
 import CommonBtn from "src/components/button/CommonBtn";
+import { addLineBreak } from "src/libs/validate";
 const ProjectDetail = () => {
     const { id } = useParams();
     const [data] = useState(projectData[id]);
 
-    const addLineBreak = (str) =>
-        str.split('\n').map((subStr) => {
-            return (
-            <>
-                {subStr}
-                <br />
-            </>
-        );
-    });
     return <div className="project-detail-section">
         <div className="title-section">
             <div className="detail-home container">

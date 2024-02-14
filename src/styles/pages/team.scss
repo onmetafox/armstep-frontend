@@ -76,11 +76,11 @@ body.modal-open {
 
   .modal-overlay {
     .modal-content {
-      padding: 24px;
-      max-width: 580px;
+      padding: 31px;
+      max-width: 600px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 25px;
 
       .wrapper {
         display: flex;
