@@ -1,8 +1,8 @@
 import React from 'react';
 import upworkImg from "../assets/images/upwork.svg";
 import linkedinImg from "../assets/images/linkedin.svg";
-
-const TeamMemberCard = ({ name, role, imgUrl, upwork, linkedin }) => {
+import contraImg from "../assets/images/contra.svg";
+const TeamMemberCard = ({ name, role, imgUrl, upwork, linkedin, contra }) => {
     return (
         <div className="wrapper">
             <img src={imgUrl} alt={name} className="team-member-image" />
@@ -13,7 +13,10 @@ const TeamMemberCard = ({ name, role, imgUrl, upwork, linkedin }) => {
                     <img src={linkedinImg} alt="Linkedin" />
                 </a>
                 <a href={upwork} target="_blank" rel="noopener noreferrer">
-                    <img src={upworkImg} alt="Linkedin" />
+                    <img src={upworkImg} alt="Upwork" />
+                </a>
+                <a href={contra} target="_blank" rel="noopener noreferrer">
+                    <img src={contraImg} alt="Contra" />
                 </a>
             </div>
         </div>

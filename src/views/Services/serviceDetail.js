@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect } from "react";
 import { useParams } from 'react-router'
 import TechCard from "src/components/TechCard";
 import { serviceData } from "../../config/serviceData";
@@ -10,6 +10,15 @@ import circlePlusImg from "../../assets/icons/circle-plus.svg";
 const ServiceDetail = () => {
     const { id } = useParams();
     const [data] = useState(serviceData[id]);
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+    };
+    useEffect(()=>{
+        scrollToTop()
+    },[]);
     return <div className="detail-section">
         <div className = "container detail-container">
             <div className="color-white fs-h1">{data.title}</div>

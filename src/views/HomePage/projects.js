@@ -19,7 +19,7 @@ const Project = () => {
             <div className='project-container row m-3'>
                 { projectData.map((item, index) => (
                     Number(index) <= Number(3) && (
-                        <div className='card-row' key={index}>
+                        <div className='card-row' key={index}  onClick = { () => {navigate(`/project/${index}`)}}>
                             <ProjectCard data={item} />
                         </div>
                     )

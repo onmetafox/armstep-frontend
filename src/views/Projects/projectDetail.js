@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { projectData } from "src/config/projectData";
 import { useParams } from 'react-router';
 import "../../styles/pages/projectdetail.scss";
@@ -9,7 +9,15 @@ import { addLineBreak } from "src/libs/validate";
 const ProjectDetail = () => {
     const { id } = useParams();
     const [data] = useState(projectData[id]);
-
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+    };
+    useEffect(()=>{
+        scrollToTop()
+    },[]);
     return <div className="project-detail-section">
         <div className="title-section">
             <div className="detail-home container">

@@ -11,7 +11,7 @@ const Home = () => {
             <div className='fs-s1 color-white home-detail p-1 lh-base'>Our passion lies in creating innovative solutions that transform businesses, inspire change, and push the boundaries of what's achievable. </div>
             <div className='home-buttons'>
                 <ActiveBtn className={"m-3"} onClick = {()=>{navigate("/talk-to-us")}}/>
-                <CommonBtn title = {"Explore Services"} className={"color-white m-3"}/>
+                <CommonBtn title = {"Explore Services"} className={"color-white m-3"} onClick = {()=>{navigate("/services")}}/>
             </div>
             
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import upworkImg from "../assets/images/upwork.svg";
+import contraImg from "../assets/images/contra.svg";
 import linkedinImg from "../assets/images/linkedin.svg";
 import closeModalImg from "../assets/images/x.svg";
 import { addLineBreak } from 'src/libs/validate';
@@ -22,7 +23,10 @@ const TeamMemberModal = ({ isOpen, onClose, member }) => {
                                 <img src={linkedinImg} alt="Linkedin" />
                             </a>
                             <a href={member.upwork} target="_blank" rel="noopener noreferrer">
-                                <img src={upworkImg} alt="Linkedin" />
+                                <img src={upworkImg} alt="Upwork" />
+                            </a>
+                            <a href={member.contra} target="_blank" rel="noopener noreferrer">
+                                <img src={contraImg} alt="Contra" />
                             </a>
                         </div>
                     </div>
