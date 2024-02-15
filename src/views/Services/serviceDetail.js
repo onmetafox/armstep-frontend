@@ -9,7 +9,7 @@ import barImg from "../../assets/images/bar.svg";
 import circlePlusImg from "../../assets/icons/circle-plus.svg";
 const ServiceDetail = () => {
     const { id } = useParams();
-    const [data] = useState(serviceData[id]);
+    const [data, setData] = useState(serviceData[id]);
     const scrollToTop = () => {
         window.scrollTo({
           top: 0,
@@ -17,8 +17,9 @@ const ServiceDetail = () => {
         });
     };
     useEffect(()=>{
-        scrollToTop()
-    },[]);
+        scrollToTop();
+        setData(serviceData[id]);
+    },[id]);
     return <div className="detail-section">
         <div className = "container detail-container">
             <div className="color-white fs-h1">{data.title}</div>

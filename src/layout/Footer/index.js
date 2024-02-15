@@ -47,10 +47,10 @@ const Footer = () => {
                 <Link to='/projects' className='fs-button'>Portfolio</Link>
                 <div className="d-flex">
                   <Link to='/project/0' className="sub-menu">Graviton</Link>
-                  <Link to='/project/1' className="sub-menu">demoverse</Link>
-                  <Link to='/project/2' className="sub-menu">slash.digital</Link>
-                  <Link to='/project/3' className="sub-menu">tribeone</Link>
-                  <Link to='/project/4' className="sub-menu">serenityshield</Link>
+                  <Link to='/project/1' className="sub-menu">Demoverse</Link>
+                  <Link to='/project/2' className="sub-menu">Slash.digital</Link>
+                  <Link to='/project/3' className="sub-menu">Tribeone</Link>
+                  <Link to='/project/4' className="sub-menu">Serenityshield</Link>
                 </div>
               </div>
               <div className="footer-category">

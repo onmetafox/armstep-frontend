@@ -8,7 +8,7 @@ import CommonBtn from "src/components/button/CommonBtn";
 import { addLineBreak } from "src/libs/validate";
 const ProjectDetail = () => {
     const { id } = useParams();
-    const [data] = useState(projectData[id]);
+    const [data, setData] = useState(projectData[id]);
     const scrollToTop = () => {
         window.scrollTo({
           top: 0,
@@ -16,8 +16,9 @@ const ProjectDetail = () => {
         });
     };
     useEffect(()=>{
-        scrollToTop()
-    },[]);
+        scrollToTop();
+        setData(projectData[id])
+    },[id]);
     return <div className="project-detail-section">
         <div className="title-section">
             <div className="detail-home container">
@@ -50,7 +51,7 @@ const ProjectDetail = () => {
                 <div className="col-lg-4 col-md-12 col-sm-12 color-white fs-h3 p-3">Task Overview</div>
                 <div className="col-lg-8 col-md-12 col-sm-12 color-white fs-b p-3 lh-base">
                     {addLineBreak(data.overview)} <br></br><br></br><br></br>
-                    <CommonBtn title={"Visite website"} className={"no-gradi"}/>
+                    <CommonBtn title={"Visite website"} className={"color-white"} onClick= {() => {window.location.href = data.link}}/>
                 </div>
             </div>
             <div className="row mt-5">

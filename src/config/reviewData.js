@@ -13,7 +13,7 @@ export const reviewData = [
     {
         logo: gravitonImg,
         user:gravitonUser,
-        company: "Gravitonn",
+        company: "Graviton",
         review: "Their commitment to excellence resulted in a seamless development process, and the end product exceeded our expectations. Highly recommended!",
         name: "Troy Murray",
         role: "Founder",
