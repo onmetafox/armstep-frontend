@@ -6,6 +6,8 @@ import ServiceList from "./views/Services/serviceList";
 import ServiceDetail from "./views/Services/serviceDetail";
 import ProjectList from "./views/Projects/projectList";
 import ProjectDetail from "./views/Projects/projectDetail";
+import Privacy from "./views/PrivacyTerms/privacy";
+import Terms from "./views/PrivacyTerms/terms";
 
 const routes = [
   {
@@ -64,6 +66,20 @@ const routes = [
     children: [],
     index: true
   },
+  {
+    title: "Privacy & Policy",
+    href :"/privacy",
+    component: Privacy,
+    index: true,
+    children: []
+  },
+  {
+    title: "Terms & Condition",
+    href :"/terms",
+    component: Terms,
+    index: true,
+    children: []
+  }
 ]
 
 export default routes;

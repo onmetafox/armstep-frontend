@@ -63,8 +63,8 @@ const Footer = () => {
               <div className="footer-category">
                 <Link to='/legal' className='fs-button'>Legal</Link>
                 <div className="d-flex">
-                  <Link to='#' className="sub-menu">Privacy & Policy</Link>
-                  <Link to='#' className="sub-menu">Terms & Condition</Link>
+                  <Link to='/privacy' className="sub-menu">Privacy & Policy</Link>
+                  <Link to='/terms' className="sub-menu">Terms & Condition</Link>
                 </div>
               </div>
             </div>

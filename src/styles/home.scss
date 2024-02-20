@@ -279,9 +279,24 @@
       }
   }
 }
-
+.project-card-content{
+    cursor: pointer;
+    &:hover{
+        // transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        // transform-style: preserve-3d;
+        transform: scale(1.01);
+        transition: transform .2s;
+      }
+}
 .project-card-image > img{
-  width: 100%;
+    cursor: pointer;
+    // width: 100%;
+    &:hover{
+        // transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        // transform-style: preserve-3d;
+        transform: scale(1.01);
+        transition: transform .4s;
+  }
 }
 .review-section {
   position: relative;
