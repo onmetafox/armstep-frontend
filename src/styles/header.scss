@@ -85,7 +85,7 @@ body {
     }
 
     @media (max-width: 992px) {
-        width: calc(100% - 48px);
+        width: calc(100vw - 48px);
 
         .mr-auto {
             gap: 0;
@@ -132,7 +132,7 @@ body {
     }
 
     @media(max-width:600px) {
-        width: calc(100% - 32px);
+        width: calc(100vw - 32px);
         padding: 0px 16px;
 
         .mobile-toggle-wrapper {
