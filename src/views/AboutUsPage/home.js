@@ -2,9 +2,11 @@ import React from 'react';
 import AboutCard from 'src/components/button/card/AboutCard';
 import aboutImg from "../../assets/images/about.svg";
 import { aboutData } from 'src/config/aboutData';
+import leftImg from "../../assets/images/about-left-effect.svg";
 
 const Home = () => {
   return <div className='about-home-section'>
+    <img src={leftImg} alt="left side" className="left-side-effect"/>
     <div className='container'>
       <div className='fs-h1 color-white p-1 title desktop-hidden'>About Us</div>
       <div className='d-flex about-content justify-content-between align-items-center'>
