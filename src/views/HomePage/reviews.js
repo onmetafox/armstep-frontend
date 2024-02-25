@@ -39,7 +39,7 @@ const Reviews = () => {
             <div className='fs-h2 color-white mt-4'>Trusted by the best</div>
             <div className='fs-s1 color-white review-detail'>Discover what our clients have to say about their experiences working with us</div>
             <div className='review-content mt-5'>
-                <Swiper slidesPerView={carousel?1:3} spaceBetween={30} centeredSlides={true} pagination={{ clickable: true, }} modules={[Pagination, Navigation]} loop={true}>
+                <Swiper slidesPerView={carousel?1:3} spaceBetween={30} centeredSlides={true} pagination={{ clickable: true, }} navigation = {true} modules={[Pagination, Navigation]} loop={true}>
                 {
                     reviewData.map((item, index)=>(
                         <SwiperSlide key={index}>

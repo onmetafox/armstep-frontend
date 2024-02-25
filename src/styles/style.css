@@ -30,10 +30,30 @@
   margin-top: 30px;
   text-align: left;
 }
-.swiper-button-prev, .swiper-button-next {
-  position: relative;
-}
+
 .swiper-button-prev{
-  right: 100px;
+  right: 60px;
+  bottom: 0px;
   left: unset;
+  background-image: url("../assets/images/left-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: transparent;
+  top: unset;
+  z-index: 100;
 }
+
+.swiper-button-next{
+  right: 0px;
+  bottom: 0px;
+  left: unset;
+  background-image: url("../assets/images/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: transparent;
+  top: unset;
+  z-index: 100;
+}
+
