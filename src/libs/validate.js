@@ -6,11 +6,11 @@ export const validateEmail = (email) => {
       );
 };
 export const addLineBreak = (str) =>
-  str.split('\n').map((subStr) => {
+  str.split('\n').map((subStr, key) => {
       return (
-      <>
+      <div key={key}>
           {subStr}
           <br />
-      </>
+      </div>
   );
 });

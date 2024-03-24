@@ -1,13 +1,18 @@
 import React from 'react';
-import {serviceData} from "../../config/serviceData";
+import {useSelector} from "react-redux";
+
 import ServiceCard from '../../components/ServiceCard';
+import {allServices} from "src/features/service/serviceSlice";
 import "../../styles/pages/servicelist.scss";
+
 const ServiceList = () => {
+    const allServiceData = useSelector(allServices)
+
     return <div className="service-list">
         <div className="container">
             {
-                serviceData.map((item, index)=>(
-                    <ServiceCard data={item} key = {index} index= {index}/>
+                allServiceData && allServiceData.map((item, index) => (
+                    <ServiceCard data={item} key={index} index={index}/>
                 ))
             }
         </div>

@@ -43,6 +43,7 @@ export const reviewData = [
         company: "Demo Verse",
         review: "Their adeptness in crafting dynamic, user-centric platforms truly set them apart. A reliable partner for bringing visions to life!",
         name: "Anna Chan",
+        role: "Founder",
         profile: "https://www.linkedin.com/in/annajchan"
     },
     {

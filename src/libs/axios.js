@@ -1,8 +1,8 @@
 import axios from 'axios';
-const api_path = "https://"
-const Axios = axios.create({
+
+let Axios;
+Axios = axios.create({
   responseType: 'json',
-  baseURL: `${api_path}/api`,
 });
 
 Axios.interceptors.request.use(function (options) {

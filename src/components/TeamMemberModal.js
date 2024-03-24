@@ -1,12 +1,13 @@
 import React from 'react';
+import { addLineBreak } from 'src/libs/validate';
+import getCompletedURL from "src/utils/getCompletedURL";
 import upworkImg from "../assets/images/upwork.svg";
 import contraImg from "../assets/images/contra.svg";
 import linkedinImg from "../assets/images/linkedin.svg";
 import closeModalImg from "../assets/images/x.svg";
-import { addLineBreak } from 'src/libs/validate';
+
 const TeamMemberModal = ({ isOpen, onClose, member }) => {
     if (!isOpen) return null;
-
     return (
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={e => e.stopPropagation()}>
@@ -14,7 +15,7 @@ const TeamMemberModal = ({ isOpen, onClose, member }) => {
                     <img src={closeModalImg} alt="Close" />
                 </button>
                 <div className="wrapper">
-                    <img src={member.imgUrl} alt={member.name} className="modal-image" />
+                    <img src={getCompletedURL(member.imgUrl)} alt={member.name} className="modal-image" />
                     <div className="details">
                         <h3 className="fs-h4">{member.name}</h3>
                         <h4 className="fs-c">{member.role}</h4>
@@ -41,7 +42,7 @@ const TeamMemberModal = ({ isOpen, onClose, member }) => {
                     <div className="technology-stack-container">
                         {member.stacks.map((tech, index) => (
                             <div key={index} className="tech-item">
-                                <img src={tech.icon} alt={tech.heading} />
+                                <img src={getCompletedURL(tech.icon)} alt={tech.heading} />
                                 <span className="fs-c">{tech.heading}</span>
                             </div>
                         ))}
